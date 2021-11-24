@@ -3,3 +3,5 @@ A python program to combine resource packs that have conflicts with each other i
 
 
 [![Syntax Checker](https://github.com/EpicBirb/mrpc/actions/workflows/syntax.yml/badge.svg)](https://github.com/EpicBirb/mrpc/actions/workflows/syntax.yml)
+
+This whole prpgram is all writen in python, 

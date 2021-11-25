@@ -26,8 +26,9 @@ try:
     debug = debug1.read()
     debug1.close()
     if debug.lower() == "true":
+      debugc = 1
       if os.path.exists("./log.txt"):
-        zpn = zp.ZipFile("log", "w", zp.ZIP_DEFLATED)
+        zpn = zp.ZipFile("log.zip", "w", zp.ZIP_DEFLATED)
         zpn.write("./log.txt")
         zpn.close()
         f = open("./log.txt", "w")
@@ -49,14 +50,15 @@ try:
     f.close()
 
   def debuglog(typeoferror, append):
+    global debugc
     if debugc == 1:
-      if os.path.isfile("./log.txt"):
+      if os.path.exists("./log.txt"):
         if str(append) == "":
-          f = open("./log.txt", "a")
+          f = open("log.txt")
           f.write("\n")
           f.write("[ERROR] error not specified (debuglog)")
         else:
-          f = open("./log.txt", "a")
+          f = open("log.txt")
           f.write("\n")
           f.write(str(typeoferror) + " " + str(append))
       else:
@@ -228,12 +230,12 @@ try:
               #open json in temp
               f = open("./temp/json/" + l, "r+")
               debuglog("[OK]", "opening " + l + " in temp")
-              container = json.loads(f)
+              container = json.load(f)
 
               #add data from /assets/minecraft/models/item
               f1 = open("./" + o + "/assets/minecraft/models/item/" + p)
               debuglog("[OK]", "opening " + p + " in pack folder")
-              container2 = json.loads(f1)
+              container2 = json.load(f1)
               for q in container2["overrides"]:
                 container["overrides"].append(q)
 

@@ -1,0 +1,103 @@
+
+[OK] folder test1 is a recource pack (pack.mcmeta)
+[OK] folder test2 is a recource pack (pack.mcmeta)
+[OK] logging file blast_furnace.json
+[OK] logging file carrot_on_a_stick.json
+[OK] logging file elytra.json
+[OK] logging file item_frame.json
+[OK] logging file leather_boots.json
+[OK] logging file leather_chestplate.json
+[OK] logging file leather_helmet.json
+[OK] logging file leather_leggings.json
+[OK] logging file netherite_axe.json
+[OK] logging file netherite_hoe.json
+[OK] logging file netherite_pickaxe.json
+[OK] logging file netherite_shovel.json
+[OK] logging file potion.json
+[OK] logging file structure_block.json
+[OK] logging file written_book.json
+[OK] logging file axolotl_bucket.json
+[OK] logging file barrier.json
+[OK] logging file bread.json
+[OK] logging file bundle.json
+[OK] logging file cake.json
+[OK] logging file campfire.json
+[OK] logging file carrot_on_a_stick.json
+[OK] logging file chorus_fruit.json
+[OK] logging file compass.json
+[OK] logging file composter.json
+[OK] logging file cookie.json
+[OK] logging file daylight_detector.json
+[OK] logging file diamond_sword.json
+[OK] logging file dropper.json
+[OK] logging file golden_helmet.json
+[OK] logging file golden_sword.json
+[OK] logging file hopper.json
+[OK] logging file iron_sword.json
+[OK] logging file item_frame.json
+[OK] logging file leather_helmet.json
+[OK] logging file leather_horse_armor.json
+[OK] logging file netherite_ingot.json
+[OK] logging file netherite_sword.json
+[OK] logging file porkchop.json
+[OK] logging file potion.json
+[OK] logging file rabbit_hide.json
+[OK] logging file repeating_command_block.json
+[OK] logging file respawn_anchor.json
+[OK] logging file shears.json
+[OK] logging file slime_ball.json
+[OK] logging file soul_campfire.json
+[OK] logging file stone_sword.json
+[OK] logging file structure_block.json
+[OK] logging file tropical_fish.json
+[OK] logging file wandering_trader_spawn_egg.json
+[OK] logging file wooden_sword.json
+[OK] logging file written_book.json
+[OK] temp folder created
+[OK] created folder "json", "splash", "json/temp" in "temp"
+[OK] found dupe file carrot_on_a_stick.json
+[OK] file in ./temp/json temp
+[OK] copying carrot_on_a_stick.json to /temp/json/
+[OK] deleted temp in /temp/json/
+[OK] found dupe file item_frame.json
+[OK] file in ./temp/json carrot_on_a_stick.json
+[OK] copying item_frame.json to /temp/json/
+[OK] found dupe file leather_helmet.json
+[OK] file in ./temp/json carrot_on_a_stick.json
+[OK] copying leather_helmet.json to /temp/json/
+[OK] found dupe file potion.json
+[OK] file in ./temp/json carrot_on_a_stick.json
+[OK] copying potion.json to /temp/json/
+[OK] found dupe file structure_block.json
+[OK] file in ./temp/json carrot_on_a_stick.json
+[OK] copying structure_block.json to /temp/json/
+[OK] found dupe file written_book.json
+[OK] file in ./temp/json carrot_on_a_stick.json
+[OK] copying written_book.json to /temp/json/
+[OK] found dupe file carrot_on_a_stick.json
+[OK] file in ./temp/json carrot_on_a_stick.json
+[OK] opening carrot_on_a_stick.json in temp
+[OK] opening carrot_on_a_stick.json in pack folder
+[OK] clearing carrot_on_a_stick.json
+[OK] file in ./temp/json item_frame.json
+[OK] copying carrot_on_a_stick.json to /temp/json/
+[OK] found dupe file item_frame.json
+[OK] file in ./temp/json carrot_on_a_stick.json
+[OK] copying item_frame.json to /temp/json/
+[OK] found dupe file leather_helmet.json
+[OK] file in ./temp/json carrot_on_a_stick.json
+[OK] copying leather_helmet.json to /temp/json/
+[OK] found dupe file potion.json
+[OK] file in ./temp/json carrot_on_a_stick.json
+[OK] copying potion.json to /temp/json/
+[OK] found dupe file structure_block.json
+[OK] file in ./temp/json carrot_on_a_stick.json
+[OK] copying structure_block.json to /temp/json/
+[OK] found dupe file written_book.json
+[OK] file in ./temp/json carrot_on_a_stick.json
+[OK] copying written_book.json to /temp/json/
+[OK] removing "pack.mcmeta" and "pack.png"
+[OK] removing "pack.mcmeta" and "pack.png"
+[OK] created folder /temp/pack/
+[WARN / ERROR] [Errno 2] No such file or directory: './temp/pack/assets/minecraft/models/item/'
+-----------[End of log]-----------

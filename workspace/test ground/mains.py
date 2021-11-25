@@ -26,14 +26,15 @@ try:
     debug = debug1.read()
     debug1.close()
     if debug.lower() == "true":
+      debugc = 1
       if os.path.exists("./log.txt"):
-        zpn = zp.ZipFile("log", "w", zp.ZIP_DEFLATED)
+        zpn = zp.ZipFile("log.zip", "w", zp.ZIP_DEFLATED)
         zpn.write("./log.txt")
         zpn.close()
         f = open("./log.txt", "w")
         f.close()
       else:
-        f = open("./log.txt", "w")
+        f = open("./log.txt", "a")
         f.write("\n-----------[Debug Log]-----------\n")
         f.write("\\\\\ What errors can I find today?\n \n")
         f.close()
@@ -49,14 +50,15 @@ try:
     f.close()
 
   def debuglog(typeoferror, append):
+    global debugc
     if debugc == 1:
-      if os.path.isfile("./log.txt"):
+      if os.path.exists("./log.txt"):
         if str(append) == "":
-          f = open("./log.txt", "a")
+          f = open("log.txt", "a")
           f.write("\n")
-          f.write("[ERROR] error not specified (debuglog)")
+          f.write("[ERROR] error not specified (debuglog function)")
         else:
-          f = open("./log.txt", "a")
+          f = open("log.txt", "a")
           f.write("\n")
           f.write(str(typeoferror) + " " + str(append))
       else:
@@ -103,7 +105,7 @@ try:
     time.sleep(3)
     exit(1)
   else:
-    print("There are no resource packs in the current folder, are you trying to test me? (The program scans for pack.mcmeta in the folders)")
+    print("There are no resource packs in the current folder, are you trying to test me?")
     debuglog("[ERROR]", "there are no resource packs in the current folder")
     time.sleep(3)
     exit(1)
@@ -228,12 +230,12 @@ try:
               #open json in temp
               f = open("./temp/json/" + l, "r+")
               debuglog("[OK]", "opening " + l + " in temp")
-              container = json.loads(f)
+              container = json.load(f)
 
               #add data from /assets/minecraft/models/item
               f1 = open("./" + o + "/assets/minecraft/models/item/" + p)
               debuglog("[OK]", "opening " + p + " in pack folder")
-              container2 = json.loads(f1)
+              container2 = json.load(f1)
               for q in container2["overrides"]:
                 container["overrides"].append(q)
 

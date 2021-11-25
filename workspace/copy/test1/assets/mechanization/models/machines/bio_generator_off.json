@@ -1,0 +1,81 @@
+{
+    "parent":"mechanization:base/model_block",
+    "textures": {
+        "0": "mechanization:machines/bio_generator_side_off",
+        "1": "mechanization:base/t2_metal_plate",
+        "2": "mechanization:machines/bio_generator_top",
+        "4": "mechanization:base/t2_solid_dark",
+        "5": "mechanization:base/t2_gradient_panel"
+    },
+    "elements": [
+        {
+            "name": "Base",
+            "from": [ 0.0, 0.0, 0.0 ], 
+            "to": [ 16.0, 16.0, 16.0 ], 
+            "faces": {
+                "north": { "texture": "#0", "uv": [ 0.0, 0.0, 16.0, 16.0 ] },
+                "east": { "texture": "#0", "uv": [ 0.0, 0.0, 16.0, 16.0 ] },
+                "south": { "texture": "#0", "uv": [ 0.0, 0.0, 16.0, 16.0 ] },
+                "west": { "texture": "#0", "uv": [ 0.0, 0.0, 16.0, 16.0 ] },
+                "up": { "texture": "#1", "uv": [ 0.0, 0.0, 16.0, 16.0 ] },
+                "down": { "texture": "#1", "uv": [ 0.0, 0.0, 16.0, 16.0 ] }
+            }
+        },
+        {
+            "name": "Chimney",
+            "from": [ 5.0, 16.0, 5.0 ], 
+            "to": [ 11.0, 26.0, 11.0 ], 
+            "faces": {
+                "north": { "texture": "#1", "uv": [ 1.0, 1.0, 7.0, 11.0 ] },
+                "east": { "texture": "#1", "uv": [ 1.0, 1.0, 7.0, 11.0 ] },
+                "south": { "texture": "#1", "uv": [ 1.0, 1.0, 7.0, 11.0 ] },
+                "west": { "texture": "#1", "uv": [ 1.0, 1.0, 7.0, 11.0 ] },
+                "up": { "texture": "#2", "uv": [ 0.0, 0.0, 15.0, 15.0 ] }
+            }
+        },
+        {
+            "name": "Top 1",
+            "from": [ 5.0, 16.5, 4.0 ], 
+            "to": [ 11.0, 18.5, 9.1 ], 
+            "rotation": { "origin": [ 8.0, 8.0, 8.0 ], "axis": "x", "angle": -22.5 },
+            "faces": {
+                "east": { "texture": "#4", "uv": [ 0.0, 0.0, 5.1, 2.0 ] },
+                "west": { "texture": "#4", "uv": [ 0.0, 0.0, 5.1, 2.0 ] },
+                "up": { "texture": "#5", "uv": [ 10.0, 0.0, 16.0, 16.0 ] }
+            }
+        },
+        {
+            "name": "Top 2",
+            "from": [ 5.0, 16.5, 6.9 ], 
+            "to": [ 11.0, 18.5, 12.0 ], 
+            "rotation": { "origin": [ 8.0, 8.0, 8.0 ], "axis": "x", "angle": 22.5 },
+            "faces": {
+                "east": { "texture": "#4", "uv": [ 0.0, 0.0, 5.1, 2.0 ] },
+                "west": { "texture": "#4", "uv": [ 0.0, 0.0, 5.1, 2.0 ] },
+                "up": { "texture": "#5", "uv": [ 10.0, 0.0, 16.0, 16.0 ] }
+            }
+        },
+        {
+            "name": "Top 3",
+            "from": [ 6.9, 16.5, 5.0 ], 
+            "to": [ 12.0, 18.5, 11.0 ], 
+            "rotation": { "origin": [ 8.0, 8.0, 8.0 ], "axis": "z", "angle": -22.5 },
+            "faces": {
+                "north": { "texture": "#4", "uv": [ 0.0, 0.0, 6.0, 2.0 ] },
+                "south": { "texture": "#4", "uv": [ 0.0, 0.0, 5.1, 2.0 ] },
+                "up": { "texture": "#5", "uv": [ 10.0, 0.0, 16.0, 16.0 ] }
+            }
+        },
+        {
+            "name": "Top 4",
+            "from": [ 4.1, 16.5, 5.0 ], 
+            "to": [ 9.2, 18.5, 11.0 ], 
+            "rotation": { "origin": [ 8.0, 8.0, 8.0 ], "axis": "z", "angle": 22.5 },
+            "faces": {
+                "north": { "texture": "#4", "uv": [ 0.0, 0.0, 6.0, 2.0 ] },
+                "south": { "texture": "#4", "uv": [ 0.0, 0.0, 5.1, 2.0 ] },
+                "up": { "texture": "5", "uv": [ 10.0, 0.0, 16.0, 16.0 ] }
+            }
+        }
+    ]
+}

@@ -1,0 +1,8 @@
+{
+    "variants": {
+        "type=bottom": { "model": "block/cobbled_deepslate_slab" },
+        "type=top": { "model": "block/cobbled_deepslate_slab_top" },
+        "type=double,waterlogged=false": { "model": "block/cobbled_deepslate" },
+        "type=double,waterlogged=true": { "model": "mechanization:base/resources/uranium_ore_deepslate" }
+    }
+}

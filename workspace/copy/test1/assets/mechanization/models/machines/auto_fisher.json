@@ -1,0 +1,64 @@
+{
+    "parent":"mechanization:base/model_block",
+    "textures": {
+        "0": "mechanization:base/t2_solid_dark",
+        "1": "mechanization:base/t2_gradient_panel",
+        "2": "mechanization:base/t2_metal_plate",
+        "3": "mechanization:machines/fisher_net"
+    },
+    "elements": [
+        {
+            "name": "Base",
+            "from": [ 0.0, 0.0, 0.0 ], 
+            "to": [ 16.0, 1.0, 16.0 ], 
+            "faces": {
+                "north": { "texture": "#0", "uv": [ 0.0, 0.0, 16.0, 1.0 ] },
+                "south": { "texture": "#0", "uv": [ 0.0, 0.0, 16.0, 1.0 ] },
+                "up": { "texture": "#1", "uv": [ 0.0, 0.0, 16.0, 16.0 ] },
+                "down": { "texture": "#2", "uv": [ 0.0, 0.0, 16.0, 16.0 ] }
+            }
+        },
+        {
+            "name": "Side 1",
+            "from": [ 0.0, 0.0, 0.0 ], 
+            "to": [ 1.0, 16.0, 16.0 ], 
+            "faces": {
+                "north": { "texture": "#0", "uv": [ 0.0, 0.0, 1.0, 16.0 ] },
+                "east": { "texture": "#1", "uv": [ 0.0, 0.0, 16.0, 16.0 ] },
+                "south": { "texture": "#0", "uv": [ 0.0, 0.0, 1.0, 16.0 ] },
+                "west": { "texture": "#2", "uv": [ 0.0, 0.0, 16.0, 16.0 ] }
+            }
+        },
+        {
+            "name": "Side 2",
+            "from": [ 15.0, 0.0, 0.0 ], 
+            "to": [ 16.0, 16.0, 16.0 ], 
+            "faces": {
+                "north": { "texture": "#0", "uv": [ 0.0, 0.0, 1.0, 16.0 ] },
+                "east": { "texture": "#2", "uv": [ 0.0, 0.0, 16.0, 16.0 ] },
+                "south": { "texture": "#0", "uv": [ 0.0, 0.0, 1.0, 16.0 ] },
+                "west": { "texture": "#1", "uv": [ 0.0, 0.0, 16.0, 16.0 ] }
+            }
+        },
+        {
+            "name": "Top",
+            "from": [ 0.0, 15.0, 0.0 ], 
+            "to": [ 16.0, 16.0, 16.0 ], 
+            "faces": {
+                "north": { "texture": "#0", "uv": [ 0.0, 0.0, 16.0, 1.0 ] },
+                "south": { "texture": "#0", "uv": [ 0.0, 0.0, 16.0, 1.0 ] },
+                "up": { "texture": "#2", "uv": [ 0.0, 0.0, 16.0, 16.0 ] },
+                "down": { "texture": "#1", "uv": [ 0.0, 0.0, 16.0, 16.0 ] }
+            }
+        },
+        {
+            "name": "Net",
+            "from": [ 1.0, 1.0, 7.0 ], 
+            "to": [ 15.0, 15.0, 9.0 ], 
+            "faces": {
+                "north": { "texture": "#3", "uv": [ 0.0, 0.0, 16.0, 16.0 ] },
+                "south": { "texture": "#3", "uv": [ 0.0, 0.0, 16.0, 16.0 ] }
+            }
+        }
+    ]
+}

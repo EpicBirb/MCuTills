@@ -1,0 +1,54 @@
+{
+    "parent": "item/generated",
+    "textures": {
+        "layer0": "item/leather_boots",
+		"layer1": "item/leather_boots_overlay"
+    },
+    "overrides": [		
+		{ "predicate": { "custom_model_data": 6422900 }, "model": "mechanization:machines/gui/liquid_tank_empty" },
+		{ "predicate": { "custom_model_data": 6422901 }, "model": "mechanization:machines/gui/liquid_tank_1" },
+		{ "predicate": { "custom_model_data": 6422902 }, "model": "mechanization:machines/gui/liquid_tank_2" },
+		{ "predicate": { "custom_model_data": 6422903 }, "model": "mechanization:machines/gui/liquid_tank_3" },
+		{ "predicate": { "custom_model_data": 6422904 }, "model": "mechanization:machines/gui/liquid_tank_4" },
+		{ "predicate": { "custom_model_data": 6422905 }, "model": "mechanization:machines/gui/liquid_tank_5" },
+		{ "predicate": { "custom_model_data": 6422906 }, "model": "mechanization:machines/gui/liquid_tank_6" },
+		{ "predicate": { "custom_model_data": 6422907 }, "model": "mechanization:machines/gui/liquid_tank_7" },
+		{ "predicate": { "custom_model_data": 6422908 }, "model": "mechanization:machines/gui/liquid_tank_8" },
+		{ "predicate": { "custom_model_data": 6422909 }, "model": "mechanization:machines/gui/liquid_tank_9" },
+		{ "predicate": { "custom_model_data": 6422910 }, "model": "mechanization:machines/gui/liquid_tank_10" },
+		{ "predicate": { "custom_model_data": 6422911 }, "model": "mechanization:machines/gui/liquid_tank_11" },
+		{ "predicate": { "custom_model_data": 6422912 }, "model": "mechanization:machines/gui/liquid_tank_12" },
+		{ "predicate": { "custom_model_data": 6422913 }, "model": "mechanization:machines/gui/liquid_tank_13" },
+		{ "predicate": { "custom_model_data": 6422914 }, "model": "mechanization:machines/gui/liquid_tank_14" },
+		{ "predicate": { "custom_model_data": 6422915 }, "model": "mechanization:machines/gui/liquid_tank_15" },
+		{ "predicate": { "custom_model_data": 6422916 }, "model": "mechanization:machines/gui/liquid_tank_16" },
+		
+		{ "predicate": { "custom_model_data": 6422917 }, "model": "mechanization:machines/gui/liquid_tank_empty" },
+		{ "predicate": { "custom_model_data": 6422918 }, "model": "mechanization:machines/gui/liquid_tank_molten_1" },
+		{ "predicate": { "custom_model_data": 6422919 }, "model": "mechanization:machines/gui/liquid_tank_molten_2" },
+		{ "predicate": { "custom_model_data": 6422920 }, "model": "mechanization:machines/gui/liquid_tank_molten_3" },
+		{ "predicate": { "custom_model_data": 6422921 }, "model": "mechanization:machines/gui/liquid_tank_molten_4" },
+		{ "predicate": { "custom_model_data": 6422922 }, "model": "mechanization:machines/gui/liquid_tank_molten_5" },
+		{ "predicate": { "custom_model_data": 6422923 }, "model": "mechanization:machines/gui/liquid_tank_molten_6" },
+		{ "predicate": { "custom_model_data": 6422924 }, "model": "mechanization:machines/gui/liquid_tank_molten_7" },
+		{ "predicate": { "custom_model_data": 6422925 }, "model": "mechanization:machines/gui/liquid_tank_molten_8" },
+		{ "predicate": { "custom_model_data": 6422926 }, "model": "mechanization:machines/gui/liquid_tank_molten_9" },
+		{ "predicate": { "custom_model_data": 6422927 }, "model": "mechanization:machines/gui/liquid_tank_molten_10" },
+		{ "predicate": { "custom_model_data": 6422928 }, "model": "mechanization:machines/gui/liquid_tank_molten_11" },
+		{ "predicate": { "custom_model_data": 6422929 }, "model": "mechanization:machines/gui/liquid_tank_molten_12" },
+		{ "predicate": { "custom_model_data": 6422930 }, "model": "mechanization:machines/gui/liquid_tank_molten_13" },
+		{ "predicate": { "custom_model_data": 6422931 }, "model": "mechanization:machines/gui/liquid_tank_molten_14" },
+		{ "predicate": { "custom_model_data": 6422932 }, "model": "mechanization:machines/gui/liquid_tank_molten_15" },
+		{ "predicate": { "custom_model_data": 6422933 }, "model": "mechanization:machines/gui/liquid_tank_molten_16" },
+		
+		
+		
+		{ "predicate": { "custom_model_data": 6424109 }, "model": "mechanization:gadgets/modular_boots" },
+		{ "predicate": { "custom_model_data": 6424114 }, "model": "mechanization:gadgets/hover_boots" },
+		{ "predicate": { "custom_model_data": 6424115 }, "model": "mechanization:gadgets/phase_boots" },
+		
+		{ "predicate": { "custom_model_data": 6424900 }, "model": "mechanization:gadgets/modular_boots_hover" },
+		{ "predicate": { "custom_model_data": 6424901 }, "model": "mechanization:gadgets/modular_boots_phase" },
+		{ "predicate": { "custom_model_data": 6424902 }, "model": "mechanization:gadgets/modular_boots_phase_hover" }
+	]
+}

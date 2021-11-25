@@ -1,0 +1,89 @@
+{
+    "parent":"mechanization:base/model_block",
+    "textures": {
+        "0": "mechanization:base/t2_battery_side",
+        "1": "mechanization:base/t2_metal_plate",
+        "2": "mechanization:machines/auto_farm",
+        "3": "mechanization:base/t2_solid_dark",
+        "4": "mechanization:base/t2_gradient_panel"
+    },
+    "elements": [
+        {
+            "name": "Base",
+            "from": [ 0.0, 0.0, 0.0 ], 
+            "to": [ 16.0, 4.0, 16.0 ], 
+            "faces": {
+                "north": { "texture": "#0", "uv": [ 0.0, 13.0, 12.0, 16.0 ] },
+                "east": { "texture": "#0", "uv": [ 0.0, 13.0, 12.0, 16.0 ] },
+                "south": { "texture": "#0", "uv": [ 0.0, 13.0, 12.0, 16.0 ] },
+                "west": { "texture": "#0", "uv": [ 0.0, 13.0, 12.0, 16.0 ] },
+                "up": { "texture": "#1", "uv": [ 0.0, 0.0, 16.0, 16.0 ] },
+                "down": { "texture": "#1", "uv": [ 0.0, 0.0, 16.0, 16.0 ] }
+            }
+        },
+        {
+            "name": "Center",
+            "from": [ 3.0, 4.0, 3.0 ], 
+            "to": [ 13.0, 14.0, 13.0 ], 
+            "faces": {
+                "north": { "texture": "#2", "uv": [ 0.0, 0.0, 16.0, 16.0 ] },
+                "east": { "texture": "#2", "uv": [ 0.0, 0.0, 16.0, 16.0 ] },
+                "south": { "texture": "#2", "uv": [ 0.0, 0.0, 16.0, 16.0 ] },
+                "west": { "texture": "#2", "uv": [ 0.0, 0.0, 16.0, 16.0 ] },
+                "up": { "texture": "#1", "uv": [ 0.0, 0.0, 16.0, 16.0 ] }
+            }
+        },
+        {
+            "name": "Roof 1",
+            "from": [ 3.0, 13.4, -0.30000000000000004 ], 
+            "to": [ 13.0, 15.4, 5.7 ], 
+            "rotation": { "origin": [ 8.0, 8.0, 7.8 ], "axis": "x", "angle": -22.5 },
+            "faces": {
+                "north": { "texture": "#3", "uv": [ 0.0, 0.0, 10.0, 2.0 ] },
+                "east": { "texture": "#3", "uv": [ 0.0, 0.0, 6.0, 2.0 ] },
+                "west": { "texture": "#3", "uv": [ 0.0, 0.0, 6.0, 2.0 ] },
+                "up": { "texture": "#4", "uv": [ 6.0, 0.0, 16.0, 6.0 ] },
+                "down": { "texture": "#4", "uv": [ 6.0, 0.0, 16.0, 6.0 ] }
+            }
+        },
+        {
+            "name": "Roof 2",
+            "from": [ 3.0, 13.4, 10.3 ], 
+            "to": [ 13.0, 15.4, 16.3 ], 
+            "rotation": { "origin": [ 8.0, 8.0, 8.2 ], "axis": "x", "angle": 22.5 },
+            "faces": {
+                "east": { "texture": "#3", "uv": [ 0.0, 0.0, 6.0, 2.0 ] },
+                "south": { "texture": "#3", "uv": [ 0.0, 0.0, 10.0, 2.0 ] },
+                "west": { "texture": "#3", "uv": [ 0.0, 0.0, 6.0, 2.0 ] },
+                "up": { "texture": "#4", "uv": [ 6.0, 0.0, 16.0, 6.0 ] },
+                "down": { "texture": "#4", "uv": [ 6.0, 0.0, 16.0, 6.0 ] }
+            }
+        },
+        {
+            "name": "Roof 3",
+            "from": [ 10.3, 13.4, 3.0 ], 
+            "to": [ 16.3, 15.4, 13.0 ], 
+            "rotation": { "origin": [ 8.2, 8.0, 8.0 ], "axis": "z", "angle": -22.5 },
+            "faces": {
+                "north": { "texture": "#3", "uv": [ 0.0, 0.0, 6.0, 2.0 ] },
+                "east": { "texture": "#3", "uv": [ 0.0, 0.0, 10.0, 2.0 ] },
+                "south": { "texture": "#3", "uv": [ 0.0, 0.0, 6.0, 2.0 ] },
+                "up": { "texture": "#4", "uv": [ 6.0, 0.0, 12.0, 10.0 ] },
+                "down": { "texture": "#4", "uv": [ 6.0, 0.0, 12.0, 10.0 ] }
+            }
+        },
+        {
+            "name": "Roof 4",
+            "from": [ -0.2999999999999998, 13.4, 3.0 ], 
+            "to": [ 5.7, 15.4, 13.0 ], 
+            "rotation": { "origin": [ 7.8, 8.0, 8.0 ], "axis": "z", "angle": 22.5 },
+            "faces": {
+                "north": { "texture": "#3", "uv": [ 0.0, 0.0, 6.0, 2.0 ] },
+                "south": { "texture": "#3", "uv": [ 0.0, 0.0, 6.0, 2.0 ] },
+                "west": { "texture": "#3", "uv": [ 0.0, 0.0, 8.0, 2.0 ] },
+                "up": { "texture": "#4", "uv": [ 6.0, 0.0, 12.0, 10.0 ] },
+                "down": { "texture": "#4", "uv": [ 6.0, 0.0, 12.0, 10.0 ] }
+            }
+        }
+    ]
+}

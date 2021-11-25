@@ -1,0 +1,9 @@
+{
+    "parent":"mechanization:base/tier_1_machine_frame",
+	"credit": "Made with Blockbench",
+	"textures": {
+		"1": "mechanization:base/t3_metal_plate",
+		"2": "mechanization:base/t3_solid_dark",
+		"4": "minecraft:block/purple_stained_glass"
+	}
+}

@@ -1,0 +1,6 @@
+{
+    "parent":"mechanization:machines/casting_basin_off",
+    "textures": {
+        "0": "mechanization:machines/casting_basin_side_on"
+    }
+}

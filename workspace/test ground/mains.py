@@ -9,11 +9,10 @@ try:
   #var
   temp_c = 0
   dirs = {}
-  packDir = []
-  packName = []
-  packPath = []
   pack = []
   checks = []
+  appendup = []
+  appendupdict = []
   dup1 = ""
   container = ""
   container2 = ""
@@ -232,12 +231,36 @@ try:
               debuglog("[OK]", "opening " + l + " in temp")
               container = json.load(f)
 
-              #add data from /assets/minecraft/models/item
+              #open json in assets
               f1 = open("./" + o + "/assets/minecraft/models/item/" + p)
               debuglog("[OK]", "opening " + p + " in pack folder")
               container2 = json.load(f1)
+
+              #append data
+              debuglog("[OK]", "appending data...")
               for q in container2["overrides"]:
                 container["overrides"].append(q)
+
+              #apppend dups and change to str
+              debuglog("[OK]", "appending check data...")
+              for s in container["overrides"]:
+                appendup.append(str(s))
+
+              #check for dups
+              debuglog("[OK]", "checking dups")
+              jdit = [key for key in Counter(appendup).keys() if Counter(appendup)[key]>1]
+
+              #change back to dict
+              for z in appendup:
+                appendupdict.append(json.loads(z))
+
+              #remove dups
+              debuglog("[OK]", "removing dups...")
+              try:
+                for l in jdit:
+                  container["overrides"].remove(l)
+              except:
+                pass
 
               #clear file in temp and write json data
               debuglog("[OK]", "clearing " + l)
@@ -246,9 +269,10 @@ try:
               f.write(json.dumps(container))
 
               #close file
+              debuglog("[OK]", "closing file...")
               f.close()
               f1.close()
-            #else copy file
+            #else: copy file
             else:
               try:
                 shutil.copy("./" + o + "/assets/minecraft/models/item/" + p, "./temp/json/")
@@ -259,7 +283,7 @@ try:
                 except:
                   pass
               except Exception as error:
-                debuglog("[WARN / ERROR]", error)
+                debuglog("[FATAL ERROR]", error)
         else:
           pass
 
@@ -307,5 +331,5 @@ try:
   exit(1)
 
 except Exception as error:
-    debuglog("[WARN / ERROR]", error)
+    debuglog("[FATAL ERROR]", error)
     exit(1)

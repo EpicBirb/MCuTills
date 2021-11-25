@@ -1,4 +1,8 @@
 
+-----------[Debug Log]-----------
+\\\ What errors can I find today?
+ 
+
 [OK] folder test1 is a recource pack (pack.mcmeta)
 [OK] folder test2 is a recource pack (pack.mcmeta)
 [OK] logging file blast_furnace.json
@@ -65,39 +69,41 @@
 [OK] found dupe file leather_helmet.json
 [OK] file in ./temp/json carrot_on_a_stick.json
 [OK] copying leather_helmet.json to /temp/json/
+[OK] file in ./temp/json item_frame.json
+[OK] copying leather_helmet.json to /temp/json/
 [OK] found dupe file potion.json
 [OK] file in ./temp/json carrot_on_a_stick.json
+[OK] copying potion.json to /temp/json/
+[OK] file in ./temp/json item_frame.json
+[OK] copying potion.json to /temp/json/
+[OK] file in ./temp/json leather_helmet.json
 [OK] copying potion.json to /temp/json/
 [OK] found dupe file structure_block.json
 [OK] file in ./temp/json carrot_on_a_stick.json
 [OK] copying structure_block.json to /temp/json/
+[OK] file in ./temp/json item_frame.json
+[OK] copying structure_block.json to /temp/json/
+[OK] file in ./temp/json leather_helmet.json
+[OK] copying structure_block.json to /temp/json/
+[OK] file in ./temp/json potion.json
+[OK] copying structure_block.json to /temp/json/
 [OK] found dupe file written_book.json
 [OK] file in ./temp/json carrot_on_a_stick.json
+[OK] copying written_book.json to /temp/json/
+[OK] file in ./temp/json item_frame.json
+[OK] copying written_book.json to /temp/json/
+[OK] file in ./temp/json leather_helmet.json
+[OK] copying written_book.json to /temp/json/
+[OK] file in ./temp/json potion.json
+[OK] copying written_book.json to /temp/json/
+[OK] file in ./temp/json structure_block.json
 [OK] copying written_book.json to /temp/json/
 [OK] found dupe file carrot_on_a_stick.json
 [OK] file in ./temp/json carrot_on_a_stick.json
 [OK] opening carrot_on_a_stick.json in temp
 [OK] opening carrot_on_a_stick.json in pack folder
-[OK] clearing carrot_on_a_stick.json
-[OK] file in ./temp/json item_frame.json
-[OK] copying carrot_on_a_stick.json to /temp/json/
-[OK] found dupe file item_frame.json
-[OK] file in ./temp/json carrot_on_a_stick.json
-[OK] copying item_frame.json to /temp/json/
-[OK] found dupe file leather_helmet.json
-[OK] file in ./temp/json carrot_on_a_stick.json
-[OK] copying leather_helmet.json to /temp/json/
-[OK] found dupe file potion.json
-[OK] file in ./temp/json carrot_on_a_stick.json
-[OK] copying potion.json to /temp/json/
-[OK] found dupe file structure_block.json
-[OK] file in ./temp/json carrot_on_a_stick.json
-[OK] copying structure_block.json to /temp/json/
-[OK] found dupe file written_book.json
-[OK] file in ./temp/json carrot_on_a_stick.json
-[OK] copying written_book.json to /temp/json/
-[OK] removing "pack.mcmeta" and "pack.png"
-[OK] removing "pack.mcmeta" and "pack.png"
-[OK] created folder /temp/pack/
-[WARN / ERROR] [Errno 2] No such file or directory: './temp/pack/assets/minecraft/models/item/'
+[OK] appending data...
+[OK] appending check data...
+[OK] checking dups
+[FATAL ERROR] Expecting property name enclosed in double quotes: line 1 column 2 (char 1)
 -----------[End of log]-----------

@@ -1,13 +1,10 @@
 {
-    "parent": "minecraft:item/generated",
+    "parent": "item/generated",
     "textures": {
-      "layer0": "item/item_frame"
+        "layer0": "item/item_frame"
     },
-    "overrides": [{
-        "predicate": {
-          "custom_model_data": 330000
-        },
-        "model": "tcc:item/phantom_item_frame"
-      }
-    ]
-  }
+    "overrides": [
+		{ "predicate": { "custom_model_data": 6425008 }, "model": "mechanization:assembly/item_extractor" },
+		{ "predicate": { "custom_model_data": 6425009 }, "model": "mechanization:assembly/item_inserter" }
+	]
+}

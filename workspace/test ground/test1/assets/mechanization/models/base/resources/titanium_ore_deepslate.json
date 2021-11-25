@@ -1,0 +1,22 @@
+{
+	"parent":"mechanization:base/model_block",
+    "textures": {
+        "0": "mechanization:base/resources/titanium_ore_deepslate",
+		"particle":"mechanization:base/resources/titanium_ore_deepslate"
+    },
+	"elements": [
+		{
+            "name": "Block",
+            "from": [ -0.03, -0.03, -0.03 ], 
+            "to": [ 16.03, 16.03, 16.03 ], 
+            "faces": {
+                "north": { "texture": "#0", "uv": [ 0.0, 0.0, 16.0, 16.0 ], "cullface":"north" },
+                "east": { "texture": "#0", "uv": [ 0.0, 0.0, 16.0, 16.0 ], "cullface":"east" },
+                "south": { "texture": "#0", "uv": [ 0.0, 0.0, 16.0, 16.0 ], "cullface":"south" },
+                "west": { "texture": "#0", "uv": [ 0.0, 0.0, 16.0, 16.0 ], "cullface":"west" },
+                "up": { "texture": "#0", "uv": [ 0.0, 0.0, 16.0, 16.0 ], "cullface":"up" },
+                "down": { "texture": "#0", "uv": [ 0.0, 0.0, 16.0, 16.0 ], "cullface":"down" }
+            }
+        }
+	]
+}

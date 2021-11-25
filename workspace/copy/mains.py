@@ -2,82 +2,82 @@ import os,time,json,shutil,atexit
 import zipfile as zp
 from collections import Counter
 
-#null
-confirm2 = ""
-
-#var
-temp_c = 0
-dirs = {}
-packDir = []
-packName = []
-packPath = []
-pack = []
-checks = []
-dup1 = ""
-container = ""
-container2 = ""
-copy = ""
-debugc = ""
-
-#debug checker
 try:
-  debug1 = open("./debug.txt")
-  debug = debug1.read()
-  debug1.close()
-  if debug.lower() == "true":
-    if os.path.exists("./log.txt"):
-      zpn = zp.ZipFile("log", "w", zipfile.ZIP_DEFLATED)
-      zpn.write("./log.txt")
-      zpn.close()
-      f = open("./log.txt", "w")
-      f.close()
-    else:
-      f = open("./log.txt", "a")
-      f.write("\n-----------[Debug Log]-----------\n")
-      f.write("\\\\\ What errors can I find today?\n \n")
-      f.close()
-  else:
-    pass
-except FileNotFoundError:
-  pass
+  #null
+  confirm2 = ""
 
-#function
-def exit_handler():
-  f = open("./log.txt", "a")
-  f.write("\n-----------[End of log]-----------")
-  f.close()
+  #var
+  temp_c = 0
+  dirs = {}
+  packDir = []
+  packName = []
+  packPath = []
+  pack = []
+  checks = []
+  dup1 = ""
+  container = ""
+  container2 = ""
+  copy = ""
+  debugc = ""
 
-def debuglog(typeoferror, append):
-  if debugc == 1:
-    if os.path.isfile("./log.txt"):
-      if str(append) == "":
-        f = open("./log.txt", "a")
-        f.write("\n")
-        f.write("[ERROR] error not specified (debuglog)")
+  #debug checker
+  try:
+    debug1 = open("./debug.txt")
+    debug = debug1.read()
+    debug1.close()
+    if debug.lower() == "true":
+      if os.path.exists("./log.txt"):
+        zpn = zp.ZipFile("log", "w", zp.ZIP_DEFLATED)
+        zpn.write("./log.txt")
+        zpn.close()
+        f = open("./log.txt", "w")
+        f.close()
       else:
         f = open("./log.txt", "a")
-        f.write("\n")
-        f.write(str(typeoferror) + " " + str(append))
+        f.write("\n-----------[Debug Log]-----------\n")
+        f.write("\\\\\ What errors can I find today?\n \n")
+        f.close()
     else:
       pass
-  else:
+  except FileNotFoundError:
     pass
 
-#atexit handler
-atexit.register(exit_handler)
+  #function
+  def exit_handler():
+    f = open("./log.txt", "a")
+    f.write("\n-----------[End of log]-----------")
+    f.close()
 
-#intro
-print("==================================================")
-print("Welcome to JSONesource, a JSON combiner for minecraft \n resource packs that has a conflict with each other.")
-print("==================================================")
+  def debuglog(typeoferror, append):
+    if debugc == 1:
+      if os.path.isfile("./log.txt"):
+        if str(append) == "":
+          f = open("./log.txt", "a")
+          f.write("\n")
+          f.write("[ERROR] error not specified (debuglog)")
+        else:
+          f = open("./log.txt", "a")
+          f.write("\n")
+          f.write(str(typeoferror) + " " + str(append))
+      else:
+        pass
+    else:
+      pass
 
-print()
-print("Before we begin, you must have the resource packs in the same directory as this program (The resource packs must not be in zip files)")
-print()
+  #atexit handler
+  atexit.register(exit_handler)
 
-#check for resource packs
-print()
-try:
+  #intro
+  print("==================================================")
+  print("Welcome to JSONesource, a JSON combiner for minecraft \n resource packs that has a conflict with each other.")
+  print("==================================================")
+
+  print()
+  print("Before we begin, you must have the resource packs in the same directory as this program (The resource packs must not be in zip files)")
+  print()
+
+  #check for resource packs
+  print()
   for i in os.listdir("."):
     try:
       for o in os.listdir("./" + i):
@@ -89,12 +89,8 @@ try:
           pass
     except NotADirectoryError:
       pass
-except Exception as error:
-  debuglog("[WARN / ERROR]", error)
-  exit(1)
 
-#list all resource packs in current durectory, if not, it will exit.
-try:
+  #list all resource packs in current durectory, if not, it will exit
   if temp_c >= 2:
     print("List of resource packs in current directory:")
     for p in pack:
@@ -112,12 +108,8 @@ try:
     time.sleep(3)
     exit(1)
   print()
-except Exception as error:
-  debuglog("[WARN / ERROR]", error)
-  exit(1)
 
-#asks if these are the packs to be merged
-try:
+  #asks if these are the packs to be merged
   print()
   confirm = input("Are these the resource packs you need to be merged (Yes or No)? ")
   while True:
@@ -131,44 +123,32 @@ try:
     else:
       print()
       confirm2 = input("Yes or No? ")
-except Exception as error:
-  debuglog("[WARN / ERROR]", error)
-  exit(1)
 
-#list all files in /assets/minecraft/models/item/ cuz it records the json files inside of it
-try:
+  #list all files in /assets/minecraft/models/item/ cuz it records the json files inside of it
   for i in pack:
     for j in os.listdir("./" + i + "/assets/minecraft/models/item/"):
       checks.append(j)
       debuglog("[OK]", "logging file " + j)
-except Exception as error:
-  debuglog("[WARN / ERROR]", error)
-  exit(1)
 
-#check for duplicate files
-try:
+  #check for duplicate files
   checkfordups = [key for key in Counter(checks).keys() if Counter(checks)[key]>1]
-except Exception as error:
-  debuglog("[WARN / ERROR]", error)
-  exit(1)
-  
-#makes the temp folder, if exist, print error
-try:
-  os.mkdir("./temp/")
-  debuglog("[OK]", "temp folder created")
-except FileExistsError:
-  print("The program is trying to make a folder in the current folder, but can't do so. This may be cuase by already having the folder \"temp\" in the directory or becuase the program forgot to clear it up. If you are seeing this, please delete the folder.")
-  debuglog("[ERROR]", "folder \"temp\" is already in the currnet folder")
-  time.sleep(15)
-  exit(1)
+    
+  #makes the temp folder, if exist, print error
+  try:
+    os.mkdir("./temp/")
+    debuglog("[OK]", "temp folder created")
+  except FileExistsError:
+    print("The program is trying to make a folder in the current folder, but can't do so. This may be cuase by already having the folder \"temp\" in the directory or becuase the program forgot to clear it up. If you are seeing this, please delete the folder.")
+    debuglog("[ERROR]", "folder \"temp\" is already in the currnet folder")
+    time.sleep(15)
+    exit(1)
 
-#warn
-print()
-print()
-confirm3 = input("Before we continue, the folder you need to be merged with must be edited by the program, if ths pack is new and hasn't been backed up, I advise you to do it. Don't blame me if this happens. DO YOU WISH TO CONTINUE? (Yes or No): ")
+  #warn
+  print()
+  print()
+  confirm3 = input("Before we continue, the folder you need to be merged with must be edited by the program, if ths pack is new and hasn't been backed up, I advise you to do it. Don't blame me if this happens. DO YOU WISH TO CONTINUE? (Yes or No): ")
 
-#input checker
-try:
+  #input checker
   while True:
     if confirm3.lower() == "yes" or confirm2.lower() == "yes":
       break
@@ -187,25 +167,17 @@ try:
     else:
       print()
       confirm2 = input("Yes or No? ")
-except Exception as error:
-  debuglog("[WARN / ERROR]", error)
-  exit(1)
 
-#make temp strorage
-try:
+  #make temp strorage
   os.mkdir("./temp/json/")
   os.mkdir("./temp/splash/")
   os.mkdir("./temp/json/temp/")
   debuglog("[OK]", "created folder \"json\", \"splash\", \"json/temp\" in \"temp\"")
-except Exception as error:
-  debuglog("[WARN / ERROR]", error)
-  exit(1)
 
-#temp_c reset
-temp_c = 0
+  #temp_c reset
+  temp_c = 0
 
-#splash merge
-try:
+  #splash merge
   try:
     for i in pack:
       for o in os.listdir("./" + i + "/assets/minecraft/texts/"):
@@ -213,12 +185,8 @@ try:
         debuglog("[OK]", "counting " + "o")
   except FileNotFoundError:
     pass
-except Exception as error:
-  debuglog("[WARN / ERROR]", error)
-  exit(1)
 
-#checkfor more than 1 splash
-try:
+  #checkfor more than 1 splash
   try:
     if temp_c >= 2:
       for i in pack:
@@ -226,11 +194,11 @@ try:
           for p in os.listdir("./temp/splash/"):
             if p == o:
               debuglog("[OK]", "opening " + o)
-              f = open("./" + i + "/assets/minecraft/texts/" + o)
+              f = open(os.path.join("./" + i + "/assets/minecraft/texts/" + o))
 
-              f1 = open("./temp/splash/" + o)
+              f1 = open(os.path.join("./temp/splash/" + o))
               container2 = f1.read()
-              
+                
               f.write("\n")
               f.write(container2)
 
@@ -243,15 +211,11 @@ try:
       pass
   except:
     debuglog("[WARN]", "passing file " + p)
-except Exception as error:
-  debuglog("[WARN / ERROR]", error)
-  exit(1)
 
-#reset container2
-container2 = ""
+  #reset container2
+  container2 = ""
 
-#merge model json
-try:
+  #merge model json
   for o in pack:
     for i, k in enumerate(checkfordups):
       for p in os.listdir("./" + o + "/assets/minecraft/models/item/"):
@@ -264,12 +228,12 @@ try:
               #open json in temp
               f = open("./temp/json/" + l, "r+")
               debuglog("[OK]", "opening " + l + " in temp")
-              container = json.load(f)
+              container = json.loads(f)
 
               #add data from /assets/minecraft/models/item
               f1 = open("./" + o + "/assets/minecraft/models/item/" + p)
               debuglog("[OK]", "opening " + p + " in pack folder")
-              container2 = json.load(f1)
+              container2 = json.loads(f1)
               for q in container2["overrides"]:
                 container["overrides"].append(q)
 
@@ -285,99 +249,61 @@ try:
             #else copy file
             else:
               try:
-                shutil.copy("./" + o + "/assets/minecraft/models/item/" + p, "./temp/json/" + p)
+                shutil.copy("./" + o + "/assets/minecraft/models/item/" + p, "./temp/json/")
                 debuglog("[OK]", "copying " + p + " to /temp/json/")
+                try:
+                  shutil.rmtree("./temp/json/temp")
+                  debuglog("[OK]", "deleted temp in /temp/json/")
+                except:
+                  pass
               except Exception as error:
                 debuglog("[WARN / ERROR]", error)
         else:
           pass
-except Exception as error:
-  debuglog("[WARN / ERROR]", error)
-  exit(1)
 
-#removes file to prepare for transfer
-try:
+  #removes file to prepare for transfer
   for i in pack:
     try:
       os.remove("./" + i + "/pack.mcmeta")
       os.remove("./" + i + "/pack.png")
-      shutil.rmtree("./temp/json/temp")
-      debuglog("[OK]", "removing \"pack.mcmeta\", \"/temp/json/temp/\" and \"pack.png\"")
+      debuglog("[OK]", "removing \"pack.mcmeta\" and \"pack.png\"")
     except FileNotFoundError:
       pass
-except Exception as error:
-  debuglog("[WARN / ERROR]", error)
-  exit(1)
 
-#make temp path for new pack
-try:
+  #make temp path for new pack  
   os.mkdir("./temp/pack/")
   debuglog("[OK]", "created folder /temp/pack/")
-except Exception as error:
-  debuglog("[WARN / ERROR]", error)
-  exit(1)
 
-try:
+  #create dir and copy
   for i in pack:
     for o in os.listdir(i):
       for l in os.listdir(os.path.join(i, o)):
         for subdir, dirs, files in os.walk(l):
-          packPath.append(os.path.join("./temp/pack/assets/", subdir))
-          debuglog("[OK]", "logging " + os.path.join("/temp/pack/", subdir))
+          os.mkdir(os.path.join("./temp/pack/assets/", subdir))
+          debuglog("[OK]", "creating directory " + os.path.join("/temp/pack/assets/", subdir))
+        for subdir, dirs, files in os.walk(l):
           for file in files:
-            packDir.append(os.path.join(os.getcwd(), subdir, file))
-            debuglog("[OK]", "logging " + os.path.join(os.getcwd(), subdir, file))
-except Exception as error:
-  debuglog("[WARN / ERROR]", error)
-  exit(1)
+            shutil.copy(os.path.join("./temp/pack/assets/", subdir, file))
+            debuglog("[OK]", "copying " + os.path.join(os.getcwd(), subdir, file) + " to pack")
 
-#create folders
-try:
-  os.mkdir("./temp/pack/assets")
-  for l, i in enumerate(packPath):
-    try:
-      os.mkdir(str(i))
-      debuglog("[OK]", "creating " + i)
-    except:
-      pass
-except Exception as error:
-  debuglog("[WARN / ERROR]", error)
-  exit(1)
-
-#move files
-try:
-  for i, s in enumerate(packDir):
-    try:
-      shutil.move(s, packPath[i])
-      debuglog("[OK]", "moving " + s + " to " + packPath[i])
-    except:
-      pass
-except Exception as error:
-  debuglog("[WARN / ERROR]", error)
-  exit(1)
-
-#move json files to temp pack
-try:
+  #move json files to temp pack
   for i in os.listdir("./temp/json/"):
     shutil.move("./temp/json/" + i, "./temp/pack/assets/minecraft/models/item/")
     debuglog("[OK]", "moving " + i + "to pack in temp")
-except Exception as error:
-  debuglog("[WARN / ERROR]", error)
-  exit(1)
 
-#move pack to current folder and remove temp
-try:
+  #move pack to current folder and remove temp
   shutil.move("./temp/pack", ".")
   shutil.rmtree("./temp")
   debuglog("[OK]", "moved temp pack into main dir and removed temp folder")
-except Exception as error:
-  debuglog("[WARN / ERROR]", error)
+
+  #done
+  print("Merge Complete")
+  print("")
+  print("Exiting...")
+  debuglog("[OK]", "complete, exiting")
+  time.sleep(2)
   exit(1)
 
-#done
-print("Merge Complete")
-print("")
-print("Exiting...")
-debuglog("[OK]", "complete, exiting")
-time.sleep(2)
-exit(1)
+except Exception as error:
+    debuglog("[WARN / ERROR]", error)
+    exit(1)

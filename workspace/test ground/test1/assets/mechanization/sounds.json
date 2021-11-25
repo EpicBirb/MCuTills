@@ -1,0 +1,229 @@
+{
+	"base.battery_ambient": {
+		"subtitle":"Battery",
+		"sounds": [
+			{
+				"name":"mechanization:base/battery_ambient",
+				"pitch":1.0,
+				"weight":1
+			},
+			{
+				"name":"mechanization:base/battery_ambient",
+				"pitch":1.2,
+				"weight":1
+			},
+			{
+				"name":"mechanization:base/battery_ambient",
+				"pitch":0.9,
+				"weight":1
+			}
+		]
+	},
+	"base.quantum_battery_ambient": {
+		"subtitle":"Quantum Battery",
+		"sounds": [
+			{
+				"name":"mechanization:base/quantum_battery_ambient",
+				"pitch":0.7,
+				"weight":1
+			},
+			{
+				"name":"mechanization:base/quantum_battery_ambient",
+				"pitch":1.3,
+				"weight":1
+			},
+			{
+				"name":"mechanization:base/quantum_battery_ambient",
+				"pitch":1.0,
+				"weight":1
+			}
+		]
+	},
+	"base.energy_transfer": {
+		"subtitle":"Energy Transferring",
+		"sounds": [
+			"mechanization:base/energy_transfer"
+		]
+	},
+	"base.wrench_break": {
+		"subtitle":"Wrench Breaking Machine",
+		"sounds": [
+			"mechanization:base/wrench_break"
+		]
+	},
+	"machines.electric_furnace": {
+		"subtitle":"Electric Furnace",
+		"sounds": [
+			"mechanization:machines/electric_furnace"
+		]
+	},
+	"machines.tree_feller": {
+		"subtitle":"Tree Feller",
+		"sounds": [
+			"mechanization:machines/tree_feller"
+		]
+	},
+
+	"machines.teleporter_charging": {
+		"subtitle":"Teleporter Charging Up",
+		"sounds": [
+			"mechanization:machines/teleporter_charging"
+		]
+	},
+	"machines.teleporter_boom": {
+		"subtitle":"Teleporter Boom",
+		"sounds": [
+			"mechanization:machines/teleporter_boom"
+		]
+	},
+	"machines.fisher": {
+		"subtitle":"Fisher",
+		"sounds": [
+			"mechanization:machines/fisher"
+		]
+	},
+	"machines.grinder": {
+		"subtitle":"Grinder",
+		"sounds": [
+			{
+				"name":"mechanization:machines/grinder",
+				"pitch":1.05,
+				"weight":1
+			},
+			{
+				"name":"mechanization:machines/grinder",
+				"pitch":1.0,
+				"weight":1
+			},
+			{
+				"name":"mechanization:machines/grinder",
+				"pitch":0.95,
+				"weight":1
+			}
+		]
+	},
+	"machines.reformer": {
+		"subtitle":"Item Reformer",
+		"sounds": [
+		{
+				"name":"mechanization:machines/reformer",
+				"pitch":1.05,
+				"weight":1
+			},
+			{
+				"name":"mechanization:machines/reformer",
+				"pitch":1.0,
+				"weight":1
+			},
+			{
+				"name":"mechanization:machines/reformer",
+				"pitch":0.95,
+				"weight":1
+			}
+		]
+	},
+	"machines.ender_generator": {
+		"subtitle":"Ender Generator",
+		"sounds": [
+		{
+				"name":"mechanization:machines/ender_gen",
+				"pitch":1.05,
+				"weight":1
+			},
+			{
+				"name":"mechanization:machines/ender_gen",
+				"pitch":1.0,
+				"weight":1
+			},
+			{
+				"name":"mechanization:machines/ender_gen",
+				"pitch":0.95,
+				"weight":1
+			}
+		]
+	},
+	"nuclear.fission_reactor_explosion": {
+		"subtitle":"Fission Reactor Explosion",
+		"sounds": [
+			"mechanization:nuclear/fission_reactor_explosion"
+		]
+	},
+	"nuclear.steam_boil": {
+		"subtitle":"Steam Hissing",
+		"sounds": [
+			"mechanization:nuclear/steam_boil"
+		]
+	},
+	"nuclear.fission_reactor_active": {
+		"subtitle":"Fission Reactor",
+		"sounds": [
+			"mechanization:nuclear/fission_reactor_active"
+		]
+	},
+	"nuclear.steam_turbine_active": {
+		"subtitle":"Steam Turbine",
+		"sounds": [
+			"mechanization:nuclear/steam_turbine_active"
+		]
+	},
+	"gadgets.laser_gun": {
+		"subtitle":"Laser Gun",
+		"sounds": [
+			"mechanization:gadgets/laser_shot"
+		]
+	},
+	"gadgets.echo_rock": {
+		"subtitle":"Echo-Locater Found Nothing",
+		"sounds": [
+			"mechanization:gadgets/echo_none"
+		]
+	},
+	"gadgets.echo_cave": {
+		"subtitle":"Echo-Locater Found A Cave",
+		"sounds": [
+			"mechanization:gadgets/echo_cave"
+		]
+	},
+	"assembly.music.end_of_the_world": {
+		"subtitle":"Disc \"End of the World\"",
+		"sounds": [
+			"mechanization:assembly/music/end_of_the_world"
+		],
+		"stream":true
+	},
+	"assembly.music.hyperspace": {
+		"subtitle":"Disc \"Hyperspace\"",
+		"sounds": [
+			"mechanization:assembly/music/hyperspace"
+		],
+		"stream":true
+	},
+	"assembly.music.money_for_nothing": {
+		"subtitle":"Disc \"Money for Nothing\"",
+		"sounds": [
+			"mechanization:assembly/music/money_for_nothing"
+		],
+		"stream":true
+	},
+	"assembly.music.wanderer": {
+		"subtitle":"Disc \"Wanderer\"",
+		"sounds": [
+			"mechanization:assembly/music/wanderer"
+		],
+		"stream":true
+	},
+	"assembly.music.stranger_think": {
+		"subtitle":"Disc \"Stranger Think\"",
+		"sounds": [
+			"mechanization:assembly/music/stranger_think"
+		],
+		"stream":true
+	},
+	"assembly.music.atomic_amnesia": {
+		"subtitle":"Disc \"Atomic Amnesia\"",
+		"sounds": [
+			"mechanization:assembly/music/atomic_amnesia"
+		],
+		"stream":true
+	}
+}

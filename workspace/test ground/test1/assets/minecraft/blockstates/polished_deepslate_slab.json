@@ -1,0 +1,8 @@
+{
+    "variants": {
+        "type=bottom": { "model": "block/polished_deepslate_slab" },
+        "type=top": { "model": "block/polished_deepslate_slab_top" },
+        "type=double,waterlogged=false": { "model": "block/polished_deepslate" },
+        "type=double,waterlogged=true": { "model": "mechanization:base/resources/titanium_ore_deepslate" }
+    }
+}

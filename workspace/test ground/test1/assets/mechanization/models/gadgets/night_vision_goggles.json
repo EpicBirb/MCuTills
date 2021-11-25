@@ -1,0 +1,7 @@
+{
+    "parent": "item/generated",
+    "textures": {
+		"layer0": "mechanization:gadgets/night_vision_goggles",
+        "layer1": "mechanization:gadgets/night_vision_goggles"
+    }
+}

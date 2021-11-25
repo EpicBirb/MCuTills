@@ -1,0 +1,34 @@
+{
+    "parent":"mechanization:base/model_block",
+    "textures": {
+        "0": "mechanization:base/t2_metal_plate",
+        "1": "block/piston_side",
+        "2": "block/piston_top"
+    },
+    "elements": [
+        {
+            "name": "Cube",
+            "from": [ 0.0, 0.0, 0.0 ], 
+            "to": [ 16.0, 16.0, 12.0 ], 
+            "faces": {
+                "north": { "texture": "#0", "uv": [ 0.0, 0.0, 16.0, 16.0 ] },
+                "east": { "texture": "#0", "uv": [ 0.0, 0.0, 16.0, 16.0 ] },
+                "west": { "texture": "#0", "uv": [ 0.0, 0.0, 16.0, 16.0 ] },
+                "up": { "texture": "#0", "uv": [ 0.0, 0.0, 16.0, 16.0 ] },
+                "down": { "texture": "#0", "uv": [ 0.0, 0.0, 16.0, 16.0 ] }
+            }
+        },
+        {
+            "name": "Head",
+            "from": [ 0.0, 0.0, 12.0 ], 
+            "to": [ 16.0, 16.0, 16.0 ], 
+            "faces": {
+                "east": { "texture": "#1", "uv": [ 0.0, 0.0, 16.0, 4.0 ], "rotation": 270 },
+                "south": { "texture": "#2", "uv": [ 0.0, 0.0, 16.0, 16.0 ] },
+                "west": { "texture": "#1", "uv": [ 0.0, 0.0, 16.0, 4.0 ], "rotation": 90 },
+                "up": { "texture": "#1", "uv": [ 0.0, 0.0, 16.0, 4.0 ] },
+                "down": { "texture": "#1", "uv": [ 0.0, 0.0, 16.0, 4.0 ] }
+            }
+        }
+    ]
+}

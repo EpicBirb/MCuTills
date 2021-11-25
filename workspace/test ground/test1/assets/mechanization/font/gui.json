@@ -1,0 +1,88 @@
+{
+    "providers": [
+		{
+            "type": "bitmap",
+            "file": "mechanization:gadgets/gui/heat_bar.png",
+			"ascent": 8,
+			"height": 10,
+			"chars": ["\uee00\uee01","\uee02\uee03","\uee04\uee05"]
+        },
+		{
+            "type": "bitmap",
+            "file": "mechanization:base/gui/machine_crafting_table.png",
+			"ascent": 13,
+			"height": 256,
+			"chars": ["\uee06"]
+        },
+		{
+            "type": "bitmap",
+            "file": "mechanization:base/gui/left_click_icon.png",
+			"ascent": 13,
+			"height": 256,
+			"chars": ["\uee07"]
+        },
+		{
+            "type": "bitmap",
+            "file": "mechanization:base/gui/right_click_icon.png",
+			"ascent": 8,
+			"height": 10,
+			"chars": ["\uee08"]
+        },
+		{
+            "type": "bitmap",
+            "file": "mechanization:machines/gui/steam_generator.png",
+			"ascent": 13,
+			"height": 256,
+			"chars": ["\uee09"]
+        },
+		{
+            "type": "bitmap",
+            "file": "mechanization:machines/gui/alloy_furnace.png",
+			"ascent": 13,
+			"height": 256,
+			"chars": ["\uee0a"]
+        },
+		{
+            "type": "bitmap",
+            "file": "mechanization:machines/gui/liquid_tank_block.png",
+			"ascent": 13,
+			"height": 256,
+			"chars": ["\uee0b"]
+        },
+		{
+            "type": "bitmap",
+            "file": "mechanization:machines/gui/arc_furnace.png",
+			"ascent": 13,
+			"height": 256,
+			"chars": ["\uee0c"]
+        },
+		{
+            "type": "bitmap",
+            "file": "mechanization:machines/gui/casting_basin.png",
+			"ascent": 13,
+			"height": 256,
+			"chars": ["\uee0d"]
+        },
+		{
+            "type": "bitmap",
+            "file": "mechanization:machines/gui/thermoelectric_generator.png",
+			"ascent": 13,
+			"height": 256,
+			"chars": ["\uee0e"]
+        },
+		{
+            "type": "bitmap",
+            "file": "mechanization:machines/gui/enchanting_station.png",
+			"ascent": 13,
+			"height": 256,
+			"chars": ["\uee0f"]
+        },
+		{
+            "type": "bitmap",
+            "file": "mechanization:assembly/gui/dye_machine.png",
+			"ascent": 13,
+			"height": 256,
+			"chars": ["\uee10"]
+        }
+    ]
+}

@@ -1,0 +1,7 @@
+{
+    "parent": "item/potion",
+    "textures": {
+        "layer0": "mechanization:base/bucket_overlay",
+        "layer1": "mechanization:base/bucket"
+    }
+}

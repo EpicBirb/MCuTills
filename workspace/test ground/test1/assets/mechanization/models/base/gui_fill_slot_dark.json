@@ -1,0 +1,19 @@
+{
+    "parent": "item/generated",
+    "textures": {
+        "layer0": "mechanization:base/gui/fill_slot_dark"
+    },
+	"display": {
+		"gui": {
+			"rotation": [ 0, 0, 0 ],
+			"translation": [ 0, 0, 0 ],
+			"scale": [ 1.125, 1.125, 1.125 ]
+		},
+		"ground": {
+			"rotation": [ 0, 0, 0 ],
+			"translation": [ 0, 0, 0 ],
+			"scale": [ 0, 0, 0 ]
+		}
+	},
+	"gui_light":"front"
+}

@@ -1,0 +1,7 @@
+{
+    "parent": "item/generated",
+    "textures": {
+		"layer0": "mechanization:gadgets/modular_helmet_vision_rebreather",
+        "layer1": "mechanization:gadgets/modular_helmet_vision_rebreather"
+    }
+}

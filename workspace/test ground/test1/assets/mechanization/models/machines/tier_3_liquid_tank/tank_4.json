@@ -1,0 +1,6 @@
+{
+    "parent":"mechanization:machines/tier_3_liquid_tank/tank_empty",
+	"textures": {
+		"2": "mechanization:machines/t3_liquid_tank/side_4"
+	}
+}

@@ -1,0 +1,55 @@
+
+{
+	"credit": "Made with Blockbench",
+	"parent": "mechanization:base/model_block",
+	"textures": {
+		"0": "mechanization:assembly/item_pipe",
+		"particle": "mechanization:assembly/item_pipe"
+	},
+	"elements": [
+
+		{
+			"name": "Center",
+			"from": [6, 6, 6],
+			"to": [10, 10, 10],
+			"faces": {
+				"north": {"uv": [6, 6, 10, 10], "texture": "#0"},
+				"east": {"uv": [6, 6, 10, 10], "texture": "#0"},
+				"south": {"uv": [6, 6, 10, 10], "texture": "#0"},
+				"west": {"uv": [6, 6, 10, 10], "texture": "#0"},
+				"up": {"uv": [6, 6, 10, 10], "texture": "#0"},
+				"down": {"uv": [6, 6, 10, 10], "texture": "#0"}
+			}
+
+		},
+
+		{
+			"name": "Up",
+			"from": [6, 10, 6],
+			"to": [10, 16, 10],
+			"faces": {
+				"north": {"uv": [6, 0, 10, 6], "texture": "#0"},
+				"east": {"uv": [6, 0, 10, 6], "texture": "#0"},
+				"south": {"uv": [6, 0, 10, 6], "texture": "#0"},
+				"west": {"uv": [6, 0, 10, 6], "texture": "#0"},
+				"up": {"uv": [6, 6, 10, 10], "texture": "#0"}
+			}
+
+		},
+
+		{
+			"name": "South",
+			"from": [6, 6, 10],
+			"to": [10, 10, 16],
+			"faces": {
+				"east": {"uv": [0, 6, 6, 10], "texture": "#0"},
+				"south": {"uv": [6, 6, 10, 10], "texture": "#0"},
+				"west": {"uv": [10, 6, 16, 10], "texture": "#0"},
+				"up": {"uv": [6, 10, 10, 16], "texture": "#0"},
+				"down": {"uv": [6, 0, 10, 6], "texture": "#0"}
+			}
+
+		}
+
+	]
+}

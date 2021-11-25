@@ -1,0 +1,6 @@
+{
+    "parent":"mechanization:machines/arc_furnace_off",
+    "textures": {
+        "0": "mechanization:machines/arc_furnace_front_on"
+    }
+}

@@ -1,0 +1,44 @@
+{
+    "parent":"mechanization:base/model_block",
+	"textures": {
+		"0": "mechanization:base/t2_metal_plate",
+		"1": "mechanization:base/t2_solid_dark",
+		"2": "minecraft:block/redstone_lamp"
+	},
+	"elements": [
+		{
+			"from": [0, 0, 0],
+			"to": [16, 2, 16],
+			"faces": {
+				"north": {"uv": [0, 0, 16, 2], "texture": "#1"},
+				"east": {"uv": [0, 0, 16, 2], "texture": "#1"},
+				"south": {"uv": [0, 0, 16, 2], "texture": "#1"},
+				"west": {"uv": [0, 0, 16, 2], "texture": "#1"},
+				"up": {"uv": [0, 0, 16, 16], "texture": "#0"},
+				"down": {"uv": [0, 0, 16, 16], "texture": "#0"}
+			}
+		},
+		{
+			"from": [0, 14, 0],
+			"to": [16, 16, 16],
+			"faces": {
+				"north": {"uv": [0, 0, 16, 2], "texture": "#1"},
+				"east": {"uv": [0, 0, 16, 2], "texture": "#1"},
+				"south": {"uv": [0, 0, 16, 2], "texture": "#1"},
+				"west": {"uv": [0, 0, 16, 2], "texture": "#1"},
+				"up": {"uv": [0, 0, 16, 16], "texture": "#0"},
+				"down": {"uv": [0, 0, 16, 16], "texture": "#0"}
+			}
+		},
+		{
+			"from": [2, 2, 2],
+			"to": [14, 14, 14],
+			"faces": {
+				"north": {"uv": [2, 2, 14, 14], "texture": "#2"},
+				"east": {"uv": [2, 2, 14, 14], "texture": "#2"},
+				"south": {"uv": [2, 2, 14, 14], "texture": "#2"},
+				"west": {"uv": [2, 2, 14, 14], "texture": "#2"}
+			}
+		}
+	]
+}

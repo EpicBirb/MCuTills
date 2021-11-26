@@ -1,0 +1,32 @@
+{
+    "parent":"mechanization:base/model_block",
+    "textures": {
+        "0": "minecraft:item/diamond_pickaxe",
+        "1": "mechanization:base/t2_metal_plate",
+        "2": "mechanization:machines/quarry_top"
+    },
+    "elements": [
+        {
+            "name": "Base",
+            "from": [ 0.0, 0.0, 0.0 ], 
+            "to": [ 16.0, 16.0, 16.0 ], 
+            "faces": {
+                "north": { "texture": "#1", "uv": [ 0.0, 0.0, 16.0, 16.0 ] },
+                "east": { "texture": "#1", "uv": [ 0.0, 0.0, 16, 16.0 ] },
+                "south": { "texture": "#1", "uv": [ 0.0, 0.0, 16.0, 16.0 ], "rotation": 90 },
+                "west": { "texture": "#1", "uv": [ 0.0, 0.0, 16, 16.0 ] },
+                "up": { "texture": "#2", "uv": [ 0.0, 0.0, 16.0, 16 ] },
+                "down": { "texture": "#1", "uv": [ 0.0, 0.0, 16.0, 16 ] }
+            }
+        },
+		{
+            "name": "Base2",
+            "from": [ 2, 2, -0.05 ], 
+            "to": [ 14, 14, 16.05 ], 
+            "faces": {
+                "north": { "texture": "#0", "uv": [ 0.0, 0.0, 16.0, 16.0 ] },
+                "south": { "texture": "#0", "uv": [ 0.0, 0.0, 16.0, 16.0 ] }
+            }
+        }
+    ]
+}

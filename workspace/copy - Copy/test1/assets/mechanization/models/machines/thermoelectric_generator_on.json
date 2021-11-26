@@ -1,0 +1,6 @@
+{
+    "parent":"mechanization:machines/thermoelectric_generator_off",
+    "textures": {
+        "0": "mechanization:machines/thermoelectric_generator_side_on"
+    }
+}

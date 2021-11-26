@@ -1,0 +1,12 @@
+{
+	"credit": "Made with Blockbench",
+	"parent":"mechanization:base/t1_capacitor/capacitor_empty",
+	"textures": {
+		"1": "mechanization:base/energy_storage_6",
+		"2": "mechanization:base/t2_solid_dark",
+		"3": "mechanization:base/t2_gradient_panel",
+		"4": "minecraft:block/red_stained_glass",
+		"5": "mechanization:base/t2_capacitor_side",
+		"6": "mechanization:base/t2_solid_plate"
+	}
+}

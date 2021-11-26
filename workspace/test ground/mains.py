@@ -12,7 +12,7 @@ try:
   pack = []
   checks = []
   appendup = []
-  appendupdict = []
+  jdit = []
   dup1 = ""
   container = ""
   container2 = ""
@@ -248,11 +248,15 @@ try:
 
               #check for dups
               debuglog("[OK]", "checking dups")
-              jdit = [key for key in Counter(appendup).keys() if Counter(appendup)[key]>1]
+              for r in appendup:
+                m = r
+                for y in appendup:
+                  if y == m:
+                    jdit.append(y)
 
               #change back to dict
               for z in appendup:
-                appendupdict.append(json.loads(z))
+                jdit.append(json.loads(z))
 
               #remove dups
               debuglog("[OK]", "removing dups...")

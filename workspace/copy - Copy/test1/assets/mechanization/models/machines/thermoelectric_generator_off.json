@@ -1,0 +1,23 @@
+{
+    "parent":"mechanization:base/model_block",
+    "textures": {
+        "0": "mechanization:machines/thermoelectric_generator_side_off",
+        "1": "mechanization:machines/thermoelectric_generator_top",
+        "2": "mechanization:base/t1_metal_plate"
+    },
+    "elements": [
+        {
+            "name": "Base",
+            "from": [ 0.0, 0.0, 0.0 ], 
+            "to": [ 16.0, 16.0, 16.0 ], 
+            "faces": {
+                "north": { "texture": "#0", "uv": [ 0.0, 0.0, 16, 16 ] },
+                "east":  { "texture": "#0", "uv": [ 0.0, 0.0, 16, 16 ] },
+                "south": { "texture": "#0", "uv": [ 0.0, 0.0, 16, 16 ] },
+                "west":  { "texture": "#0", "uv": [ 0.0, 0.0, 16, 16 ] },
+                "up":    { "texture": "#1", "uv": [ 0.0, 0.0, 16, 16 ] },
+                "down":  { "texture": "#2", "uv": [ 0.0, 0.0, 16, 16 ] }
+            }
+        }
+    ]
+}

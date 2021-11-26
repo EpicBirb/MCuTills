@@ -1,0 +1,6 @@
+{
+    "parent":"mechanization:machines/grinder_off",
+    "textures": {
+        "1": "mechanization:machines/grinder_front_on"
+    }
+}

@@ -5,11 +5,13 @@ from collections import Counter
 try:
   #null
   confirm2 = ""
+  confirm4 = ""
 
   #var
   temp_c = 0
   dirs = {}
   pack = []
+  packup = []
   checks = []
   appendup = []
   jdit = []
@@ -151,9 +153,9 @@ try:
 
   #input checker
   while True:
-    if confirm3.lower() == "yes" or confirm2.lower() == "yes":
+    if confirm3.lower() == "yes" or confirm4.lower() == "yes":
       break
-    elif confirm3.lower() == "no" or confirm2.lower() == "no":
+    elif confirm3.lower() == "no" or confirm4.lower() == "no":
       print("Canceling Operation")
       try:
         shutil.rmtree("./temp")
@@ -167,14 +169,14 @@ try:
         exit(1)
     else:
       print()
-      confirm2 = input("Yes or No? ")
+      confirm4 = input("Yes or No? ")
 
   #make temp strorage
   os.mkdir("./temp/json/")
-  os.mkdir("./temp/temp/")
   os.mkdir("./temp/splash/")
-  os.mkdir("./temp/temp/temp/")
-  debuglog("[OK]", "created folder \"temp\" \"json\", \"splash\", \"/temp/temp\" in \"temp\"")
+  os.mkdir("./temp/temp/")
+  os.mkdir("./temp/temp/temp")
+  debuglog("[OK]", "created folder \"temp/temp/\", \"temp\", \"json\", \"splash\", in \"temp\"")
 
   #temp_c reset
   temp_c = 0
@@ -184,7 +186,7 @@ try:
     for i in pack:
       for o in os.listdir("./" + i + "/assets/minecraft/texts/"):
         temp_c = temp_c + 1
-        debuglog("[OK]", "counting " + "o")
+        debuglog("[OK]", "counting " + o + " as a splash file")
   except FileNotFoundError:
     pass
 
@@ -228,8 +230,8 @@ try:
             #checks if json file is in temp/json
             if l == p:
               #open json in temp, and assets. appens then clear
-              with open("./temp/temp/" + l, "r+") as f:
-                debuglog("[OK]", "opening " + l + " in temp")
+              with open("./temp/temp/" + p, "r") as f:
+                debuglog("[OK]", "opening " + p + " in temp")
                 container = json.load(f)
                 with open("./" + o + "/assets/minecraft/models/item/" + p, "r") as f1:
                   debuglog("[OK]", "opening " + p + " in pack folder")
@@ -237,20 +239,17 @@ try:
                   debuglog("[OK]", "appending data...")
                   for q in container2["overrides"]:
                     container["overrides"].append(q)
-                with open(os.path.join("./temp/json/" + l), "w+") as t:
-                  t.write(json.dumps(container))
-            #else: copy file
+                with open(os.path.join("./temp/temp/" + p), "w+") as t:
+                  t.write(json.dumps(container, indent=2, sort_keys=True))
+                os.remove("./" + o + "/assets/minecraft/models/item/" + p)
+              debuglog("[OK]", "finished writing file " + p)
+            #else: move file
             else:
               try:
-                shutil.copy("./" + o + "/assets/minecraft/models/item/" + p, "./temp/temp/")
+                shutil.move("./" + o + "/assets/minecraft/models/item/" + p, "./temp/temp/")
                 debuglog("[OK]", "copying " + p + " to /temp/temp/")
-                try:
-                  shutil.rmtree("./temp/temp/temp")
-                  debuglog("[OK]", "deleted temp in /temp/temp/")
-                except:
-                  pass
-              except Exception as error:
-                debuglog("[FATAL ERROR]", error)
+              except:
+                debuglog("[WARN]", "could not find file " + p + ", skipping")
         else:
           pass
 
@@ -259,6 +258,7 @@ try:
     try:
       os.remove("./" + i + "/pack.mcmeta")
       os.remove("./" + i + "/pack.png")
+      shutil.rmtree("./temp/temp/temp/")
       debuglog("[OK]", "removing \"pack.mcmeta\" and \"pack.png\" from " + i)
     except FileNotFoundError:
       pass

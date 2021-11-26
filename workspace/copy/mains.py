@@ -226,31 +226,19 @@ try:
             debuglog("[OK]", "file in ./temp/json " + l)
             #checks if json file is in temp/json
             if l == p:
-              #open json in temp
-              with open("./temp/json/" + l, "w+") as f:
+              #open json in temp, and assets. appens then clear
+              with open("./temp/json/" + l, "r+") as f:
                 debuglog("[OK]", "opening " + l + " in temp")
-                container = json.loads(str(f))
-
-              #open json in assets
-              with open("./" + o + "/assets/minecraft/models/item/" + p, "r") as f1:
-                debuglog("[OK]", "opening " + p + " in pack folder")
-                container2 = json.loads(str(f1))
-
-              #append data
-              debuglog("[OK]", "appending data...")
-              for q in container2["overrides"]:
-                container["overrides"].append(q)
-
-              #clear file in temp and write json data
-              debuglog("[OK]", "clearing " + l)
-              f.seek(0)
-              f.truncate(0)
-              f.write(json.dumps(container))
-
-              #close file
-              debuglog("[OK]", "closing file...")
-              f.close()
-              f1.close()
+                container = json.load(f)
+                with open("./" + o + "/assets/minecraft/models/item/" + p, "r") as f1:
+                  debuglog("[OK]", "opening " + p + " in pack folder")
+                  container2 = json.load(f1)
+                  debuglog("[OK]", "appending data...")
+                  for q in container2["overrides"]:
+                    container["overrides"].append(q)
+                f.seek(0)
+                f.truncate(0)
+                f.write(json.dumps(container))
             #else: copy file
             else:
               try:

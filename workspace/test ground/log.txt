@@ -101,9 +101,5 @@
 [OK] found dupe file carrot_on_a_stick.json
 [OK] file in ./temp/json carrot_on_a_stick.json
 [OK] opening carrot_on_a_stick.json in temp
-[OK] opening carrot_on_a_stick.json in pack folder
-[OK] appending data...
-[OK] appending check data...
-[OK] checking dups
-[FATAL ERROR] Expecting property name enclosed in double quotes: line 1 column 2 (char 1)
+[FATAL ERROR] the JSON object must be str, bytes or bytearray, not TextIOWrapper
 -----------[End of log]-----------

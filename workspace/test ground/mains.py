@@ -227,44 +227,19 @@ try:
             #checks if json file is in temp/json
             if l == p:
               #open json in temp
-              f = open("./temp/json/" + l, "r+")
-              debuglog("[OK]", "opening " + l + " in temp")
-              container = json.load(f)
+              with open("./temp/json/" + l, "w+") as f:
+                debuglog("[OK]", "opening " + l + " in temp")
+                container = json.loads(f)
 
               #open json in assets
-              f1 = open("./" + o + "/assets/minecraft/models/item/" + p)
-              debuglog("[OK]", "opening " + p + " in pack folder")
-              container2 = json.load(f1)
+              with open("./" + o + "/assets/minecraft/models/item/" + p, "r") as f1:
+                debuglog("[OK]", "opening " + p + " in pack folder")
+                container2 = json.loads(f1)
 
               #append data
               debuglog("[OK]", "appending data...")
               for q in container2["overrides"]:
                 container["overrides"].append(q)
-
-              #apppend dups and change to str
-              debuglog("[OK]", "appending check data...")
-              for s in container["overrides"]:
-                appendup.append(str(s))
-
-              #check for dups
-              debuglog("[OK]", "checking dups")
-              for r in appendup:
-                m = r
-                for y in appendup:
-                  if y == m:
-                    jdit.append(y)
-
-              #change back to dict
-              for z in appendup:
-                jdit.append(json.loads(z))
-
-              #remove dups
-              debuglog("[OK]", "removing dups...")
-              try:
-                for l in jdit:
-                  container["overrides"].remove(l)
-              except:
-                pass
 
               #clear file in temp and write json data
               debuglog("[OK]", "clearing " + l)

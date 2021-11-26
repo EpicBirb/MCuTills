@@ -171,9 +171,10 @@ try:
 
   #make temp strorage
   os.mkdir("./temp/json/")
+  os.mkdir("./temp/temp/")
   os.mkdir("./temp/splash/")
-  os.mkdir("./temp/json/temp/")
-  debuglog("[OK]", "created folder \"json\", \"splash\", \"json/temp\" in \"temp\"")
+  os.mkdir("./temp/temp/temp/")
+  debuglog("[OK]", "created folder \"temp\" \"json\", \"splash\", \"/temp/temp\" in \"temp\"")
 
   #temp_c reset
   temp_c = 0
@@ -222,43 +223,31 @@ try:
       for p in os.listdir("./" + o + "/assets/minecraft/models/item/"):
         if p == checkfordups[i]:
           debuglog("[OK]", "found dupe file " + p)
-          for l in os.listdir("./temp/json/"):
+          for l in os.listdir("./temp/temp/"):
             debuglog("[OK]", "file in ./temp/json " + l)
             #checks if json file is in temp/json
             if l == p:
-              #open json in temp
-              with open("./temp/json/" + l, "w+") as f:
+              #open json in temp, and assets. appens then clear
+              with open("./temp/temp/" + l, "r+") as f:
                 debuglog("[OK]", "opening " + l + " in temp")
-                container = json.loads(str(f))
-
-              #open json in assets
-              with open("./" + o + "/assets/minecraft/models/item/" + p, "r") as f1:
-                debuglog("[OK]", "opening " + p + " in pack folder")
-                container2 = json.loads(str(f1))
-
-              #append data
-              debuglog("[OK]", "appending data...")
-              for q in container2["overrides"]:
-                container["overrides"].append(q)
-
-              #clear file in temp and write json data
-              debuglog("[OK]", "clearing " + l)
-              f.seek(0)
-              f.truncate(0)
-              f.write(json.dumps(container))
-
-              #close file
-              debuglog("[OK]", "closing file...")
-              f.close()
-              f1.close()
+                container = json.load(f)
+                with open("./" + o + "/assets/minecraft/models/item/" + p, "r") as f1:
+                  debuglog("[OK]", "opening " + p + " in pack folder")
+                  container2 = json.load(f1)
+                  debuglog("[OK]", "appending data...")
+                  for q in container2["overrides"]:
+                    container["overrides"].append(q)
+                t = open(os.path.join("./temp/json/" + l), "w+")
+                t.write(json.dumps(container))
+                t.close
             #else: copy file
             else:
               try:
-                shutil.copy("./" + o + "/assets/minecraft/models/item/" + p, "./temp/json/")
-                debuglog("[OK]", "copying " + p + " to /temp/json/")
+                shutil.copy("./" + o + "/assets/minecraft/models/item/" + p, "./temp/temp/")
+                debuglog("[OK]", "copying " + p + " to /temp/temp/")
                 try:
-                  shutil.rmtree("./temp/json/temp")
-                  debuglog("[OK]", "deleted temp in /temp/json/")
+                  shutil.rmtree("./temp/temp/temp")
+                  debuglog("[OK]", "deleted temp in /temp/temp/")
                 except:
                   pass
               except Exception as error:
@@ -271,7 +260,7 @@ try:
     try:
       os.remove("./" + i + "/pack.mcmeta")
       os.remove("./" + i + "/pack.png")
-      debuglog("[OK]", "removing \"pack.mcmeta\" and \"pack.png\"")
+      debuglog("[OK]", "removing \"pack.mcmeta\" and \"pack.png\" from " + i)
     except FileNotFoundError:
       pass
 
@@ -282,14 +271,15 @@ try:
   #create dir and copy
   for i in pack:
     for o in os.listdir(i):
-      for l in os.listdir(os.path.join(i, o)):
-        for subdir, dirs, files in os.walk(l):
-          os.mkdir(os.path.join("./temp/pack/assets/", subdir))
-          debuglog("[OK]", "creating directory " + os.path.join("/temp/pack/assets/", subdir))
-        for subdir, dirs, files in os.walk(l):
-          for file in files:
-            shutil.copy(os.path.join("./temp/pack/assets/", subdir, file))
-            debuglog("[OK]", "copying " + os.path.join(os.getcwd(), subdir, file) + " to pack")
+      for subdir, dirs, files in os.walk(o):
+        treedir = subdir.replace("./", "")
+        os.mkdir(os.path.join("./temp/pack/", treedir))
+        debuglog("[OK]", "creating directory " + os.path.join("/temp/pack/", subdir))
+      for subdir, dirs, files in os.walk(o):
+        for file in files:
+          treedir = subdir.replace("./", "")
+          shutil.copy(os.path.join("./temp/pack/", treedir, file))
+          debuglog("[OK]", "copying " + os.path.join(os.getcwd(), subdir, file) + " to pack")
 
   #move json files to temp pack
   for i in os.listdir("./temp/json/"):

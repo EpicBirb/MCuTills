@@ -1,7 +1,0 @@
-
------------[Debug Log]-----------
-\\\ What errors can I find today?
- 
-
-[OK] folder test1 is a recource pack (pack.mcmeta)
-[OK] folder test2 is a recource pack (pack.mcmeta)

@@ -1,6 +1,0 @@
-{
-    "parent":"mechanization:machines/super_piston",
-    "textures": {
-        "2": "block/piston_top_sticky"
-    }
-}

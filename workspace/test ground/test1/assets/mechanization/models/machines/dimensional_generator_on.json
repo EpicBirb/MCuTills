@@ -1,6 +1,0 @@
-{
-    "parent":"mechanization:machines/dimensional_generator_off",
-    "textures": {
-        "0": "mechanization:machines/dimensional_generator_front_on"
-    }
-}

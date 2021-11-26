@@ -1,6 +1,0 @@
-{
-    "parent":"mechanization:machines/alloy_furnace_off",
-    "textures": {
-        "0": "mechanization:machines/alloy_furnace_front_on"
-    }
-}

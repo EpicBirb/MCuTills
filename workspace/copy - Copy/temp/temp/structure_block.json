@@ -1,377 +1,1271 @@
 {
-  "parent": "block/structure_block",
   "overrides": [
     {
+      "model": "mechanization:base/invisible",
+      "predicate": {
+        "custom_model_data": 6421200
+      }
+    },
+    {
+      "model": "mechanization:base/gui_fill_slot",
+      "predicate": {
+        "custom_model_data": 6421202
+      }
+    },
+    {
+      "model": "mechanization:base/gui_fill_slot_dark",
+      "predicate": {
+        "custom_model_data": 6421203
+      }
+    },
+    {
+      "model": "mechanization:base/resources/tin_ingot",
+      "predicate": {
+        "custom_model_data": 6421311
+      }
+    },
+    {
+      "model": "mechanization:base/resources/tin_nugget",
+      "predicate": {
+        "custom_model_data": 6421312
+      }
+    },
+    {
+      "model": "mechanization:base/resources/tin_raw",
+      "predicate": {
+        "custom_model_data": 6421313
+      }
+    },
+    {
+      "model": "mechanization:base/resources/tin_plate",
+      "predicate": {
+        "custom_model_data": 6421315
+      }
+    },
+    {
+      "model": "mechanization:base/resources/tin_gear",
+      "predicate": {
+        "custom_model_data": 6421316
+      }
+    },
+    {
+      "model": "mechanization:base/resources/tin_rod",
+      "predicate": {
+        "custom_model_data": 6421317
+      }
+    },
+    {
+      "model": "mechanization:base/resources/titanium_ingot",
+      "predicate": {
+        "custom_model_data": 6421321
+      }
+    },
+    {
+      "model": "mechanization:base/resources/titanium_nugget",
+      "predicate": {
+        "custom_model_data": 6421322
+      }
+    },
+    {
+      "model": "mechanization:base/resources/titanium_raw",
+      "predicate": {
+        "custom_model_data": 6421323
+      }
+    },
+    {
+      "model": "mechanization:base/resources/titanium_plate",
+      "predicate": {
+        "custom_model_data": 6421325
+      }
+    },
+    {
+      "model": "mechanization:base/resources/titanium_gear",
+      "predicate": {
+        "custom_model_data": 6421326
+      }
+    },
+    {
+      "model": "mechanization:base/resources/titanium_rod",
+      "predicate": {
+        "custom_model_data": 6421327
+      }
+    },
+    {
+      "model": "mechanization:base/resources/steel_ingot",
+      "predicate": {
+        "custom_model_data": 6421330
+      }
+    },
+    {
+      "model": "mechanization:base/resources/steel_nugget",
+      "predicate": {
+        "custom_model_data": 6421331
+      }
+    },
+    {
+      "model": "mechanization:base/resources/steel_raw",
+      "predicate": {
+        "custom_model_data": 6421332
+      }
+    },
+    {
+      "model": "mechanization:base/resources/steel_plate",
+      "predicate": {
+        "custom_model_data": 6421334
+      }
+    },
+    {
+      "model": "mechanization:base/resources/steel_gear",
+      "predicate": {
+        "custom_model_data": 6421335
+      }
+    },
+    {
+      "model": "mechanization:base/resources/steel_rod",
+      "predicate": {
+        "custom_model_data": 6421336
+      }
+    },
+    {
+      "model": "mechanization:base/resources/structural_ingot",
+      "predicate": {
+        "custom_model_data": 6421340
+      }
+    },
+    {
+      "model": "mechanization:base/resources/structural_nugget",
+      "predicate": {
+        "custom_model_data": 6421341
+      }
+    },
+    {
+      "model": "mechanization:base/resources/structural_raw",
+      "predicate": {
+        "custom_model_data": 6421342
+      }
+    },
+    {
+      "model": "mechanization:base/resources/structural_plate",
+      "predicate": {
+        "custom_model_data": 6421344
+      }
+    },
+    {
+      "model": "mechanization:base/resources/structural_gear",
+      "predicate": {
+        "custom_model_data": 6421345
+      }
+    },
+    {
+      "model": "mechanization:base/resources/structural_rod",
+      "predicate": {
+        "custom_model_data": 6421346
+      }
+    },
+    {
+      "model": "mechanization:base/resources/conductive_ingot",
+      "predicate": {
+        "custom_model_data": 6421350
+      }
+    },
+    {
+      "model": "mechanization:base/resources/conductive_nugget",
+      "predicate": {
+        "custom_model_data": 6421351
+      }
+    },
+    {
+      "model": "mechanization:base/resources/conductive_raw",
+      "predicate": {
+        "custom_model_data": 6421352
+      }
+    },
+    {
+      "model": "mechanization:base/resources/conductive_plate",
+      "predicate": {
+        "custom_model_data": 6421354
+      }
+    },
+    {
+      "model": "mechanization:base/resources/conductive_gear",
+      "predicate": {
+        "custom_model_data": 6421355
+      }
+    },
+    {
+      "model": "mechanization:base/resources/conductive_rod",
+      "predicate": {
+        "custom_model_data": 6421356
+      }
+    },
+    {
+      "model": "mechanization:base/resources/titanium_steel_ingot",
+      "predicate": {
+        "custom_model_data": 6421360
+      }
+    },
+    {
+      "model": "mechanization:base/resources/titanium_steel_nugget",
+      "predicate": {
+        "custom_model_data": 6421361
+      }
+    },
+    {
+      "model": "mechanization:base/resources/titanium_steel_raw",
+      "predicate": {
+        "custom_model_data": 6421362
+      }
+    },
+    {
+      "model": "mechanization:base/resources/titanium_steel_plate",
+      "predicate": {
+        "custom_model_data": 6421364
+      }
+    },
+    {
+      "model": "mechanization:base/resources/titanium_steel_gear",
+      "predicate": {
+        "custom_model_data": 6421365
+      }
+    },
+    {
+      "model": "mechanization:base/resources/titanium_steel_rod",
+      "predicate": {
+        "custom_model_data": 6421366
+      }
+    },
+    {
+      "model": "mechanization:base/resources/reinforced_structural_ingot",
+      "predicate": {
+        "custom_model_data": 6421370
+      }
+    },
+    {
+      "model": "mechanization:base/resources/reinforced_structural_nugget",
+      "predicate": {
+        "custom_model_data": 6421371
+      }
+    },
+    {
+      "model": "mechanization:base/resources/reinforced_structural_raw",
+      "predicate": {
+        "custom_model_data": 6421372
+      }
+    },
+    {
+      "model": "mechanization:base/resources/reinforced_structural_plate",
+      "predicate": {
+        "custom_model_data": 6421374
+      }
+    },
+    {
+      "model": "mechanization:base/resources/reinforced_structural_gear",
+      "predicate": {
+        "custom_model_data": 6421375
+      }
+    },
+    {
+      "model": "mechanization:base/resources/reinforced_structural_rod",
+      "predicate": {
+        "custom_model_data": 6421376
+      }
+    },
+    {
+      "model": "mechanization:base/resources/super_conductive_ingot",
+      "predicate": {
+        "custom_model_data": 6421380
+      }
+    },
+    {
+      "model": "mechanization:base/resources/super_conductive_nugget",
+      "predicate": {
+        "custom_model_data": 6421381
+      }
+    },
+    {
+      "model": "mechanization:base/resources/super_conductive_raw",
+      "predicate": {
+        "custom_model_data": 6421382
+      }
+    },
+    {
+      "model": "mechanization:base/resources/super_conductive_plate",
+      "predicate": {
+        "custom_model_data": 6421384
+      }
+    },
+    {
+      "model": "mechanization:base/resources/super_conductive_gear",
+      "predicate": {
+        "custom_model_data": 6421385
+      }
+    },
+    {
+      "model": "mechanization:base/resources/super_conductive_rod",
+      "predicate": {
+        "custom_model_data": 6421386
+      }
+    },
+    {
+      "model": "mechanization:base/resources/ender_alloy_ingot",
+      "predicate": {
+        "custom_model_data": 6421390
+      }
+    },
+    {
+      "model": "mechanization:base/resources/ender_alloy_nugget",
+      "predicate": {
+        "custom_model_data": 6421391
+      }
+    },
+    {
+      "model": "mechanization:base/resources/ender_alloy_raw",
+      "predicate": {
+        "custom_model_data": 6421392
+      }
+    },
+    {
+      "model": "mechanization:base/resources/ender_alloy_plate",
+      "predicate": {
+        "custom_model_data": 6421394
+      }
+    },
+    {
+      "model": "mechanization:base/resources/ender_alloy_gear",
+      "predicate": {
+        "custom_model_data": 6421395
+      }
+    },
+    {
+      "model": "mechanization:base/resources/ender_alloy_rod",
+      "predicate": {
+        "custom_model_data": 6421396
+      }
+    },
+    {
+      "model": "mechanization:base/resources/nether_alloy_ingot",
+      "predicate": {
+        "custom_model_data": 6421400
+      }
+    },
+    {
+      "model": "mechanization:base/resources/nether_alloy_nugget",
+      "predicate": {
+        "custom_model_data": 6421401
+      }
+    },
+    {
+      "model": "mechanization:base/resources/nether_alloy_raw",
+      "predicate": {
+        "custom_model_data": 6421402
+      }
+    },
+    {
+      "model": "mechanization:base/resources/nether_alloy_plate",
+      "predicate": {
+        "custom_model_data": 6421404
+      }
+    },
+    {
+      "model": "mechanization:base/resources/nether_alloy_gear",
+      "predicate": {
+        "custom_model_data": 6421405
+      }
+    },
+    {
+      "model": "mechanization:base/resources/nether_alloy_rod",
+      "predicate": {
+        "custom_model_data": 6421406
+      }
+    },
+    {
+      "model": "mechanization:base/resources/crystal_composite",
+      "predicate": {
+        "custom_model_data": 6421410
+      }
+    },
+    {
+      "model": "mechanization:base/resources/crystal_composite_plate",
+      "predicate": {
+        "custom_model_data": 6421412
+      }
+    },
+    {
+      "model": "mechanization:base/resources/crystal_composite_gear",
+      "predicate": {
+        "custom_model_data": 6421413
+      }
+    },
+    {
+      "model": "mechanization:base/resources/crystal_composite_rod",
+      "predicate": {
+        "custom_model_data": 6421414
+      }
+    },
+    {
+      "model": "mechanization:base/resources/uranium_ingot",
+      "predicate": {
+        "custom_model_data": 6421431
+      }
+    },
+    {
+      "model": "mechanization:base/resources/uranium_nugget",
+      "predicate": {
+        "custom_model_data": 6421432
+      }
+    },
+    {
+      "model": "mechanization:base/resources/uranium_raw",
+      "predicate": {
+        "custom_model_data": 6421433
+      }
+    },
+    {
+      "model": "mechanization:base/resources/uranium_plate",
+      "predicate": {
+        "custom_model_data": 6421434
+      }
+    },
+    {
+      "model": "mechanization:base/resources/uranium_gear",
+      "predicate": {
+        "custom_model_data": 6421435
+      }
+    },
+    {
+      "model": "mechanization:base/resources/uranium_rod",
+      "predicate": {
+        "custom_model_data": 6421436
+      }
+    },
+    {
+      "model": "mechanization:base/resources/plutonium_ingot",
+      "predicate": {
+        "custom_model_data": 6421440
+      }
+    },
+    {
+      "model": "mechanization:base/resources/plutonium_nugget",
+      "predicate": {
+        "custom_model_data": 6421441
+      }
+    },
+    {
+      "model": "mechanization:base/resources/plutonium_raw",
+      "predicate": {
+        "custom_model_data": 6421442
+      }
+    },
+    {
+      "model": "mechanization:base/resources/plutonium_plate",
+      "predicate": {
+        "custom_model_data": 6421444
+      }
+    },
+    {
+      "model": "mechanization:base/resources/plutonium_gear",
+      "predicate": {
+        "custom_model_data": 6421445
+      }
+    },
+    {
+      "model": "mechanization:base/resources/plutonium_rod",
+      "predicate": {
+        "custom_model_data": 6421446
+      }
+    },
+    {
+      "model": "mechanization:base/resources/iron_plate",
+      "predicate": {
+        "custom_model_data": 6421450
+      }
+    },
+    {
+      "model": "mechanization:base/resources/iron_gear",
+      "predicate": {
+        "custom_model_data": 6421451
+      }
+    },
+    {
+      "model": "mechanization:base/resources/iron_rod",
+      "predicate": {
+        "custom_model_data": 6421452
+      }
+    },
+    {
+      "model": "mechanization:base/resources/gold_plate",
+      "predicate": {
+        "custom_model_data": 6421460
+      }
+    },
+    {
+      "model": "mechanization:base/resources/gold_gear",
+      "predicate": {
+        "custom_model_data": 6421461
+      }
+    },
+    {
+      "model": "mechanization:base/resources/gold_rod",
+      "predicate": {
+        "custom_model_data": 6421462
+      }
+    },
+    {
+      "model": "mechanization:base/resources/copper_plate",
+      "predicate": {
+        "custom_model_data": 6421470
+      }
+    },
+    {
+      "model": "mechanization:base/resources/copper_gear",
+      "predicate": {
+        "custom_model_data": 6421471
+      }
+    },
+    {
+      "model": "mechanization:base/resources/copper_rod",
+      "predicate": {
+        "custom_model_data": 6421472
+      }
+    },
+    {
+      "model": "mechanization:base/resources/netherite_plate",
+      "predicate": {
+        "custom_model_data": 6421480
+      }
+    },
+    {
+      "model": "mechanization:base/resources/netherite_gear",
+      "predicate": {
+        "custom_model_data": 6421481
+      }
+    },
+    {
+      "model": "mechanization:base/resources/netherite_rod",
+      "predicate": {
+        "custom_model_data": 6421482
+      }
+    },
+    {
+      "model": "mechanization:base/resources/coal_plate",
+      "predicate": {
+        "custom_model_data": 6421490
+      }
+    },
+    {
+      "model": "mechanization:base/resources/coal_gear",
+      "predicate": {
+        "custom_model_data": 6421491
+      }
+    },
+    {
+      "model": "mechanization:base/resources/coal_rod",
+      "predicate": {
+        "custom_model_data": 6421492
+      }
+    },
+    {
+      "model": "mechanization:base/resources/emerald_plate",
+      "predicate": {
+        "custom_model_data": 6421500
+      }
+    },
+    {
+      "model": "mechanization:base/resources/emerald_gear",
+      "predicate": {
+        "custom_model_data": 6421501
+      }
+    },
+    {
+      "model": "mechanization:base/resources/emerald_rod",
+      "predicate": {
+        "custom_model_data": 6421502
+      }
+    },
+    {
+      "model": "mechanization:base/resources/diamond_plate",
+      "predicate": {
+        "custom_model_data": 6421510
+      }
+    },
+    {
+      "model": "mechanization:base/resources/diamond_gear",
+      "predicate": {
+        "custom_model_data": 6421511
+      }
+    },
+    {
+      "model": "mechanization:base/resources/diamond_rod",
+      "predicate": {
+        "custom_model_data": 6421512
+      }
+    },
+    {
+      "model": "mechanization:base/resources/redstone_plate",
+      "predicate": {
+        "custom_model_data": 6421520
+      }
+    },
+    {
+      "model": "mechanization:base/resources/redstone_gear",
+      "predicate": {
+        "custom_model_data": 6421521
+      }
+    },
+    {
+      "model": "mechanization:base/resources/redstone_rod",
+      "predicate": {
+        "custom_model_data": 6421522
+      }
+    },
+    {
+      "model": "mechanization:base/resources/lapis_plate",
+      "predicate": {
+        "custom_model_data": 6421530
+      }
+    },
+    {
+      "model": "mechanization:base/resources/lapis_gear",
+      "predicate": {
+        "custom_model_data": 6421531
+      }
+    },
+    {
+      "model": "mechanization:base/resources/lapis_rod",
+      "predicate": {
+        "custom_model_data": 6421532
+      }
+    },
+    {
+      "model": "mechanization:base/resources/amethyst_plate",
+      "predicate": {
+        "custom_model_data": 6421540
+      }
+    },
+    {
+      "model": "mechanization:base/resources/amethyst_gear",
+      "predicate": {
+        "custom_model_data": 6421541
+      }
+    },
+    {
+      "model": "mechanization:base/resources/amethyst_rod",
+      "predicate": {
+        "custom_model_data": 6421542
+      }
+    },
+    {
+      "model": "mechanization:base/resources/glowstone_plate",
+      "predicate": {
+        "custom_model_data": 6421550
+      }
+    },
+    {
+      "model": "mechanization:base/resources/glowstone_gear",
+      "predicate": {
+        "custom_model_data": 6421551
+      }
+    },
+    {
+      "model": "mechanization:base/resources/glowstone_rod",
+      "predicate": {
+        "custom_model_data": 6421552
+      }
+    },
+    {
+      "model": "mechanization:base/resources/quartz_plate",
+      "predicate": {
+        "custom_model_data": 6421560
+      }
+    },
+    {
+      "model": "mechanization:base/resources/quartz_gear",
+      "predicate": {
+        "custom_model_data": 6421561
+      }
+    },
+    {
+      "model": "mechanization:base/resources/quartz_rod",
+      "predicate": {
+        "custom_model_data": 6421562
+      }
+    },
+    {
+      "model": "mechanization:base/resources/experience_plate",
+      "predicate": {
+        "custom_model_data": 6421570
+      }
+    },
+    {
+      "model": "mechanization:base/resources/experience_gear",
+      "predicate": {
+        "custom_model_data": 6421571
+      }
+    },
+    {
+      "model": "mechanization:base/resources/experience_rod",
+      "predicate": {
+        "custom_model_data": 6421572
+      }
+    },
+    {
+      "model": "mechanization:base/resources/obsidian_plate",
+      "predicate": {
+        "custom_model_data": 6421580
+      }
+    },
+    {
+      "model": "mechanization:base/resources/obsidian_gear",
+      "predicate": {
+        "custom_model_data": 6421581
+      }
+    },
+    {
+      "model": "mechanization:base/resources/obsidian_rod",
+      "predicate": {
+        "custom_model_data": 6421582
+      }
+    },
+    {
+      "model": "mechanization:machines/gui/fuel_off",
+      "predicate": {
+        "custom_model_data": 6422900
+      }
+    },
+    {
+      "model": "mechanization:machines/gui/fuel_on",
+      "predicate": {
+        "custom_model_data": 6422901
+      }
+    },
+    {
+      "model": "mechanization:nuclear/uranium_cell",
+      "predicate": {
+        "custom_model_data": 6423100
+      }
+    },
+    {
+      "model": "mechanization:nuclear/plutonium_cell",
+      "predicate": {
+        "custom_model_data": 6423101
+      }
+    },
+    {
+      "model": "mechanization:nuclear/empty_cell",
+      "predicate": {
+        "custom_model_data": 6423102
+      }
+    },
+    {
+      "model": "mechanization:gadgets/standard_barrel",
+      "predicate": {
+        "custom_model_data": 6424200
+      }
+    },
+    {
+      "model": "mechanization:gadgets/split_barrel",
+      "predicate": {
+        "custom_model_data": 6424201
+      }
+    },
+    {
+      "model": "mechanization:gadgets/long_barrel",
+      "predicate": {
+        "custom_model_data": 6424202
+      }
+    },
+    {
+      "model": "mechanization:gadgets/standard_chamber",
+      "predicate": {
+        "custom_model_data": 6424205
+      }
+    },
+    {
+      "model": "mechanization:gadgets/supercharged_chamber",
+      "predicate": {
+        "custom_model_data": 6424206
+      }
+    },
+    {
+      "model": "mechanization:gadgets/overclocked_chamber",
+      "predicate": {
+        "custom_model_data": 6424207
+      }
+    },
+    {
+      "model": "mechanization:gadgets/standard_pump",
+      "predicate": {
+        "custom_model_data": 6424210
+      }
+    },
+    {
+      "model": "mechanization:gadgets/high_pressure_pump",
+      "predicate": {
+        "custom_model_data": 6424211
+      }
+    },
+    {
+      "model": "mechanization:gadgets/accelerated_pump",
+      "predicate": {
+        "custom_model_data": 6424212
+      }
+    },
+    {
+      "model": "mechanization:gadgets/standard_heat_sink",
+      "predicate": {
+        "custom_model_data": 6424215
+      }
+    },
+    {
+      "model": "mechanization:gadgets/energized_heat_sink",
+      "predicate": {
+        "custom_model_data": 6424216
+      }
+    },
+    {
+      "model": "mechanization:gadgets/passive_heat_sink",
+      "predicate": {
+        "custom_model_data": 6424217
+      }
+    },
+    {
+      "model": "mechanization:gadgets/tinker_table_gui_empty",
+      "predicate": {
+        "custom_model_data": 6424500
+      }
+    },
+    {
+      "model": "mechanization:gadgets/tinker_table_gui_slots_1",
+      "predicate": {
+        "custom_model_data": 6424501
+      }
+    },
+    {
+      "model": "mechanization:gadgets/tinker_table_gui_slots_2",
+      "predicate": {
+        "custom_model_data": 6424502
+      }
+    },
+    {
+      "model": "mechanization:gadgets/tinker_table_gui_slots_3",
+      "predicate": {
+        "custom_model_data": 6424503
+      }
+    },
+    {
+      "model": "mechanization:gadgets/tinker_table_gui_slots_4",
+      "predicate": {
+        "custom_model_data": 6424504
+      }
+    },
+    {
+      "model": "mechanization:gadgets/tinker_table_gui_slots_5",
+      "predicate": {
+        "custom_model_data": 6424505
+      }
+    },
+    {
+      "model": "mechanization:gadgets/tinker_table_gui_slots_6",
+      "predicate": {
+        "custom_model_data": 6424506
+      }
+    },
+    {
+      "model": "mechanization:gadgets/tinker_table_plasma_weapon",
+      "predicate": {
+        "custom_model_data": 6424507
+      }
+    },
+    {
+      "model": "mechanization:assembly/dye_machine_gui",
+      "predicate": {
+        "custom_model_data": 6425900
+      }
+    },
+    {
+      "model": "mechanization:assembly/mss_terminal_gui",
+      "predicate": {
+        "custom_model_data": 6425901
+      }
+    },
+    {
+      "model": "mechanization:assembly/mss_terminal_gui2",
+      "predicate": {
+        "custom_model_data": 6425902
+      }
+    },
+    {
+      "model": "tcc:item/empty",
       "predicate": {
         "custom_model_data": 330000
-      },
-      "model": "tcc:item/empty"
+      }
     },
     {
+      "model": "tcc:gui/toasts/quests/item_complete",
       "predicate": {
         "custom_model_data": 330001
-      },
-      "model": "tcc:gui/toasts/quests/item_complete"
+      }
     },
     {
+      "model": "tcc:gui/toasts/quests/complete",
       "predicate": {
         "custom_model_data": 330002
-      },
-      "model": "tcc:gui/toasts/quests/complete"
+      }
     },
     {
+      "model": "tcc:block/snail_nest",
       "predicate": {
         "custom_model_data": 330003
-      },
-      "model": "tcc:block/snail_nest"
+      }
     },
     {
+      "model": "tcc:item/boomerang_spinning",
       "predicate": {
         "custom_model_data": 330004
-      },
-      "model": "tcc:item/boomerang_spinning"
+      }
     },
     {
+      "model": "tcc:item/spectral_boomerang_spinning",
       "predicate": {
         "custom_model_data": 330005
-      },
-      "model": "tcc:item/spectral_boomerang_spinning"
+      }
     },
     {
+      "model": "tcc:item/gemstone/amethyst",
       "predicate": {
         "custom_model_data": 330006
-      },
-      "model": "tcc:item/gemstone/amethyst"
+      }
     },
     {
+      "model": "tcc:item/gemstone/pristine/amethyst",
       "predicate": {
         "custom_model_data": 330007
-      },
-      "model": "tcc:item/gemstone/pristine/amethyst"
+      }
     },
     {
+      "model": "tcc:item/gemstone/diamond",
       "predicate": {
         "custom_model_data": 330008
-      },
-      "model": "tcc:item/gemstone/diamond"
+      }
     },
     {
+      "model": "tcc:item/gemstone/pristine/diamond",
       "predicate": {
         "custom_model_data": 330009
-      },
-      "model": "tcc:item/gemstone/pristine/diamond"
+      }
     },
     {
+      "model": "tcc:item/gemstone/emerald",
       "predicate": {
         "custom_model_data": 330010
-      },
-      "model": "tcc:item/gemstone/emerald"
+      }
     },
     {
+      "model": "tcc:item/gemstone/pristine/emerald",
       "predicate": {
         "custom_model_data": 330011
-      },
-      "model": "tcc:item/gemstone/pristine/emerald"
+      }
     },
     {
+      "model": "tcc:item/gemstone/ender_pearl",
       "predicate": {
         "custom_model_data": 330012
-      },
-      "model": "tcc:item/gemstone/ender_pearl"
+      }
     },
     {
+      "model": "tcc:item/gemstone/pristine/ender_pearl",
       "predicate": {
         "custom_model_data": 330013
-      },
-      "model": "tcc:item/gemstone/pristine/ender_pearl"
+      }
     },
     {
+      "model": "tcc:item/gemstone/lapis_lazuli",
       "predicate": {
         "custom_model_data": 330014
-      },
-      "model": "tcc:item/gemstone/lapis_lazuli"
+      }
     },
     {
+      "model": "tcc:item/gemstone/pristine/lapis_lazuli",
       "predicate": {
         "custom_model_data": 330015
-      },
-      "model": "tcc:item/gemstone/pristine/lapis_lazuli"
+      }
     },
     {
+      "model": "tcc:item/gemstone/obsidian",
       "predicate": {
         "custom_model_data": 330016
-      },
-      "model": "tcc:item/gemstone/obsidian"
+      }
     },
     {
+      "model": "tcc:item/gemstone/pristine/obsidian",
       "predicate": {
         "custom_model_data": 330017
-      },
-      "model": "tcc:item/gemstone/pristine/obsidian"
+      }
     },
     {
+      "model": "tcc:item/gemstone/prismarine_crystal",
       "predicate": {
         "custom_model_data": 330018
-      },
-      "model": "tcc:item/gemstone/prismarine_crystal"
+      }
     },
     {
+      "model": "tcc:item/gemstone/pristine/prismarine_crystal",
       "predicate": {
         "custom_model_data": 330019
-      },
-      "model": "tcc:item/gemstone/pristine/prismarine_crystal"
+      }
     },
     {
+      "model": "tcc:item/gemstone/quartz",
       "predicate": {
         "custom_model_data": 330020
-      },
-      "model": "tcc:item/gemstone/quartz"
+      }
     },
     {
+      "model": "tcc:item/gemstone/pristine/quartz",
       "predicate": {
         "custom_model_data": 330021
-      },
-      "model": "tcc:item/gemstone/pristine/quartz"
+      }
     },
     {
+      "model": "tcc:item/warped_wart",
       "predicate": {
         "custom_model_data": 330022
-      },
-      "model": "tcc:item/warped_wart"
+      }
     },
     {
+      "model": "tcc:block/teapot_empty",
       "predicate": {
         "custom_model_data": 330023
-      },
-      "model": "tcc:block/teapot_empty"
+      }
     },
     {
+      "model": "tcc:item/teacup/empty",
       "predicate": {
         "custom_model_data": 330024
-      },
-      "model": "tcc:item/teacup/empty"
+      }
     },
     {
+      "model": "tcc:block/frostbloom/grass",
       "predicate": {
         "custom_model_data": 330025
-      },
-      "model": "tcc:block/frostbloom/grass"
+      }
     },
     {
+      "model": "tcc:block/geomancer_pillar/normal",
       "predicate": {
         "custom_model_data": 330026
-      },
-      "model": "tcc:block/geomancer_pillar/normal"
+      }
     },
     {
+      "model": "tcc:block/geomancer_pillar/explosive",
       "predicate": {
         "custom_model_data": 330027
-      },
-      "model": "tcc:block/geomancer_pillar/explosive"
+      }
     },
     {
+      "model": "tcc:block/frostbloom/other",
       "predicate": {
         "custom_model_data": 330028
-      },
-      "model": "tcc:block/frostbloom/other"
+      }
     },
     {
+      "model": "tcc:item/empty",
       "predicate": {
         "custom_model_data": 330029
-      },
-      "model": "tcc:item/empty"
+      }
     },
     {
+      "model": "tcc:block/gobblerift/stage_1",
       "predicate": {
         "custom_model_data": 330030
-      },
-      "model": "tcc:block/gobblerift/stage_1"
+      }
     },
     {
+      "model": "tcc:block/gobblerift/hurt/stage_1",
       "predicate": {
         "custom_model_data": 330031
-      },
-      "model": "tcc:block/gobblerift/hurt/stage_1"
+      }
     },
     {
+      "model": "tcc:block/gobblerift/stage_2",
       "predicate": {
         "custom_model_data": 330032
-      },
-      "model": "tcc:block/gobblerift/stage_2"
+      }
     },
     {
+      "model": "tcc:block/gobblerift/hurt/stage_2",
       "predicate": {
         "custom_model_data": 330033
-      },
-      "model": "tcc:block/gobblerift/hurt/stage_2"
+      }
     },
     {
+      "model": "tcc:block/gobblerift/stage_3",
       "predicate": {
         "custom_model_data": 330034
-      },
-      "model": "tcc:block/gobblerift/stage_3"
+      }
     },
     {
+      "model": "tcc:block/gobblerift/hurt/stage_3",
       "predicate": {
         "custom_model_data": 330035
-      },
-      "model": "tcc:block/gobblerift/hurt/stage_3"
+      }
     },
     {
+      "model": "tcc:block/gobblerift/stage_4",
       "predicate": {
         "custom_model_data": 330036
-      },
-      "model": "tcc:block/gobblerift/stage_4"
+      }
     },
     {
+      "model": "tcc:block/gobblerift/hurt/stage_4",
       "predicate": {
         "custom_model_data": 330037
-      },
-      "model": "tcc:block/gobblerift/hurt/stage_4"
+      }
     },
     {
+      "model": "tcc:block/gobblerift/stage_5",
       "predicate": {
         "custom_model_data": 330038
-      },
-      "model": "tcc:block/gobblerift/stage_5"
+      }
     },
     {
+      "model": "tcc:block/gobblerift/hurt/stage_5",
       "predicate": {
         "custom_model_data": 330039
-      },
-      "model": "tcc:block/gobblerift/hurt/stage_5"
+      }
     },
     {
+      "model": "tcc:block/gobblerift/stage_6_empty",
       "predicate": {
         "custom_model_data": 330040
-      },
-      "model": "tcc:block/gobblerift/stage_6_empty"
+      }
     },
     {
+      "model": "tcc:block/gobblerift/hurt/stage_6_empty",
       "predicate": {
         "custom_model_data": 330041
-      },
-      "model": "tcc:block/gobblerift/hurt/stage_6_empty"
+      }
     },
     {
+      "model": "tcc:block/gobblerift/stage_6_digesting",
       "predicate": {
         "custom_model_data": 330042
-      },
-      "model": "tcc:block/gobblerift/stage_6_digesting"
+      }
     },
     {
+      "model": "tcc:block/gobblerift/hurt/stage_6_digesting",
       "predicate": {
         "custom_model_data": 330043
-      },
-      "model": "tcc:block/gobblerift/hurt/stage_6_digesting"
+      }
     },
     {
+      "model": "tcc:block/gobblerift/stage_6_full",
       "predicate": {
         "custom_model_data": 330044
-      },
-      "model": "tcc:block/gobblerift/stage_6_full"
+      }
     },
     {
+      "model": "tcc:block/gobblerift/hurt/stage_6_full",
       "predicate": {
         "custom_model_data": 330045
-      },
-      "model": "tcc:block/gobblerift/hurt/stage_6_full"
+      }
     },
     {
+      "model": "tcc:block/phantom_item_frame",
       "predicate": {
         "custom_model_data": 330046
-      },
-      "model": "tcc:block/phantom_item_frame"
+      }
     },
     {
+      "model": "tcc:item/amethyst_dust",
       "predicate": {
         "custom_model_data": 330047
-      },
-      "model": "tcc:item/amethyst_dust"
+      }
     },
     {
+      "model": "tcc:entity/coral_drowned/arm/brain",
       "predicate": {
         "custom_model_data": 330048
-      },
-      "model": "tcc:entity/coral_drowned/arm/brain"
+      }
     },
     {
+      "model": "tcc:entity/coral_drowned/head/brain",
       "predicate": {
         "custom_model_data": 330049
-      },
-      "model": "tcc:entity/coral_drowned/head/brain"
+      }
     },
     {
+      "model": "tcc:entity/coral_drowned/arm/bubble",
       "predicate": {
         "custom_model_data": 330050
-      },
-      "model": "tcc:entity/coral_drowned/arm/bubble"
+      }
     },
     {
+      "model": "tcc:entity/coral_drowned/head/bubble",
       "predicate": {
         "custom_model_data": 330051
-      },
-      "model": "tcc:entity/coral_drowned/head/bubble"
+      }
     },
     {
+      "model": "tcc:entity/coral_drowned/arm/fire",
       "predicate": {
         "custom_model_data": 330052
-      },
-      "model": "tcc:entity/coral_drowned/arm/fire"
+      }
     },
     {
+      "model": "tcc:entity/coral_drowned/head/fire",
       "predicate": {
         "custom_model_data": 330053
-      },
-      "model": "tcc:entity/coral_drowned/head/fire"
+      }
     },
     {
+      "model": "tcc:entity/coral_drowned/arm/horn",
       "predicate": {
         "custom_model_data": 330054
-      },
-      "model": "tcc:entity/coral_drowned/arm/horn"
+      }
     },
     {
+      "model": "tcc:entity/coral_drowned/head/horn",
       "predicate": {
         "custom_model_data": 330055
-      },
-      "model": "tcc:entity/coral_drowned/head/horn"
+      }
     },
     {
+      "model": "tcc:entity/coral_drowned/arm/tube",
       "predicate": {
         "custom_model_data": 330056
-      },
-      "model": "tcc:entity/coral_drowned/arm/tube"
+      }
     },
     {
+      "model": "tcc:entity/coral_drowned/head/tube",
       "predicate": {
         "custom_model_data": 330057
-      },
-      "model": "tcc:entity/coral_drowned/head/tube"
+      }
     },
     {
+      "model": "tcc:entity/lichen_zombie/arm",
       "predicate": {
         "custom_model_data": 330058
-      },
-      "model": "tcc:entity/lichen_zombie/arm"
+      }
     },
     {
+      "model": "tcc:entity/lichen_zombie/head",
       "predicate": {
         "custom_model_data": 330059
-      },
-      "model": "tcc:entity/lichen_zombie/head"
+      }
     },
     {
+      "model": "tcc:entity/sponge_drowned/arm",
       "predicate": {
         "custom_model_data": 330060
-      },
-      "model": "tcc:entity/sponge_drowned/arm"
+      }
     },
     {
+      "model": "tcc:entity/sponge_drowned/head",
       "predicate": {
         "custom_model_data": 330061
-      },
-      "model": "tcc:entity/sponge_drowned/head"
+      }
     }
-  ]
+  ],
+  "parent": "block/structure_block"
 }

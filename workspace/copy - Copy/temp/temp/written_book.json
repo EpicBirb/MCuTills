@@ -1,12 +1,20 @@
 {
+  "overrides": [
+    {
+      "model": "mechanization:base/manual",
+      "predicate": {
+        "custom_model_data": 6421105
+      }
+    },
+    {
+      "model": "tcc:item/compendium",
+      "predicate": {
+        "custom_model_data": 330000
+      }
+    }
+  ],
   "parent": "item/generated",
   "textures": {
     "layer0": "item/written_book"
-  },
-  "overrides": [{
-    "predicate": {
-      "custom_model_data": 330000
-    },
-    "model": "tcc:item/compendium"
-  }]
+  }
 }

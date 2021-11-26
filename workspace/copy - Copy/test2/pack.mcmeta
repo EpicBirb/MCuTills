@@ -1,0 +1,18 @@
+{
+  "pack": {
+    "pack_format": 7,
+    "description": [
+      {
+        "text": "The Creeper's Code",
+        "color": "#008725"
+      },
+      {
+        "text": "\n"
+      },
+      {
+        "text": "Version 0.5.1",
+        "color": "blue"
+      }
+    ]
+  }
+}

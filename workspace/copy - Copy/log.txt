@@ -58,138 +58,161 @@
 [OK] logging file wooden_sword.json
 [OK] logging file written_book.json
 [OK] temp folder created
-[OK] created folder "temp" "json", "splash", "/temp/temp" in "temp"
+[OK] created folder "temp/temp/", "temp", "json", "splash", in "temp"
 [OK] found dupe file carrot_on_a_stick.json
 [OK] file in ./temp/json temp
 [OK] copying carrot_on_a_stick.json to /temp/temp/
-[OK] deleted temp in /temp/temp/
 [OK] found dupe file item_frame.json
 [OK] file in ./temp/json carrot_on_a_stick.json
 [OK] copying item_frame.json to /temp/temp/
+[OK] file in ./temp/json temp
+[WARN] could not find file item_frame.json, skipping
 [OK] found dupe file leather_helmet.json
 [OK] file in ./temp/json carrot_on_a_stick.json
 [OK] copying leather_helmet.json to /temp/temp/
 [OK] file in ./temp/json item_frame.json
-[OK] copying leather_helmet.json to /temp/temp/
+[WARN] could not find file leather_helmet.json, skipping
+[OK] file in ./temp/json temp
+[WARN] could not find file leather_helmet.json, skipping
 [OK] found dupe file potion.json
 [OK] file in ./temp/json carrot_on_a_stick.json
 [OK] copying potion.json to /temp/temp/
 [OK] file in ./temp/json item_frame.json
-[OK] copying potion.json to /temp/temp/
+[WARN] could not find file potion.json, skipping
 [OK] file in ./temp/json leather_helmet.json
-[OK] copying potion.json to /temp/temp/
+[WARN] could not find file potion.json, skipping
+[OK] file in ./temp/json temp
+[WARN] could not find file potion.json, skipping
 [OK] found dupe file structure_block.json
 [OK] file in ./temp/json carrot_on_a_stick.json
 [OK] copying structure_block.json to /temp/temp/
 [OK] file in ./temp/json item_frame.json
-[OK] copying structure_block.json to /temp/temp/
+[WARN] could not find file structure_block.json, skipping
 [OK] file in ./temp/json leather_helmet.json
-[OK] copying structure_block.json to /temp/temp/
+[WARN] could not find file structure_block.json, skipping
 [OK] file in ./temp/json potion.json
-[OK] copying structure_block.json to /temp/temp/
+[WARN] could not find file structure_block.json, skipping
+[OK] file in ./temp/json temp
+[WARN] could not find file structure_block.json, skipping
 [OK] found dupe file written_book.json
 [OK] file in ./temp/json carrot_on_a_stick.json
 [OK] copying written_book.json to /temp/temp/
 [OK] file in ./temp/json item_frame.json
-[OK] copying written_book.json to /temp/temp/
+[WARN] could not find file written_book.json, skipping
 [OK] file in ./temp/json leather_helmet.json
-[OK] copying written_book.json to /temp/temp/
+[WARN] could not find file written_book.json, skipping
 [OK] file in ./temp/json potion.json
-[OK] copying written_book.json to /temp/temp/
+[WARN] could not find file written_book.json, skipping
 [OK] file in ./temp/json structure_block.json
-[OK] copying written_book.json to /temp/temp/
+[WARN] could not find file written_book.json, skipping
+[OK] file in ./temp/json temp
+[WARN] could not find file written_book.json, skipping
 [OK] found dupe file carrot_on_a_stick.json
 [OK] file in ./temp/json carrot_on_a_stick.json
 [OK] opening carrot_on_a_stick.json in temp
 [OK] opening carrot_on_a_stick.json in pack folder
 [OK] appending data...
+[OK] finished writing file carrot_on_a_stick.json
 [OK] file in ./temp/json item_frame.json
-[OK] copying carrot_on_a_stick.json to /temp/temp/
+[WARN] could not find file carrot_on_a_stick.json, skipping
 [OK] file in ./temp/json leather_helmet.json
-[OK] copying carrot_on_a_stick.json to /temp/temp/
+[WARN] could not find file carrot_on_a_stick.json, skipping
 [OK] file in ./temp/json potion.json
-[OK] copying carrot_on_a_stick.json to /temp/temp/
+[WARN] could not find file carrot_on_a_stick.json, skipping
 [OK] file in ./temp/json structure_block.json
-[OK] copying carrot_on_a_stick.json to /temp/temp/
+[WARN] could not find file carrot_on_a_stick.json, skipping
+[OK] file in ./temp/json temp
+[WARN] could not find file carrot_on_a_stick.json, skipping
 [OK] file in ./temp/json written_book.json
-[OK] copying carrot_on_a_stick.json to /temp/temp/
+[WARN] could not find file carrot_on_a_stick.json, skipping
 [OK] found dupe file item_frame.json
 [OK] file in ./temp/json carrot_on_a_stick.json
-[OK] copying item_frame.json to /temp/temp/
+[WARN] could not find file item_frame.json, skipping
 [OK] file in ./temp/json item_frame.json
 [OK] opening item_frame.json in temp
 [OK] opening item_frame.json in pack folder
 [OK] appending data...
+[OK] finished writing file item_frame.json
 [OK] file in ./temp/json leather_helmet.json
-[OK] copying item_frame.json to /temp/temp/
+[WARN] could not find file item_frame.json, skipping
 [OK] file in ./temp/json potion.json
-[OK] copying item_frame.json to /temp/temp/
+[WARN] could not find file item_frame.json, skipping
 [OK] file in ./temp/json structure_block.json
-[OK] copying item_frame.json to /temp/temp/
+[WARN] could not find file item_frame.json, skipping
+[OK] file in ./temp/json temp
+[WARN] could not find file item_frame.json, skipping
 [OK] file in ./temp/json written_book.json
-[OK] copying item_frame.json to /temp/temp/
+[WARN] could not find file item_frame.json, skipping
 [OK] found dupe file leather_helmet.json
 [OK] file in ./temp/json carrot_on_a_stick.json
-[OK] copying leather_helmet.json to /temp/temp/
+[WARN] could not find file leather_helmet.json, skipping
 [OK] file in ./temp/json item_frame.json
-[OK] copying leather_helmet.json to /temp/temp/
+[WARN] could not find file leather_helmet.json, skipping
 [OK] file in ./temp/json leather_helmet.json
 [OK] opening leather_helmet.json in temp
 [OK] opening leather_helmet.json in pack folder
 [OK] appending data...
+[OK] finished writing file leather_helmet.json
 [OK] file in ./temp/json potion.json
-[OK] copying leather_helmet.json to /temp/temp/
+[WARN] could not find file leather_helmet.json, skipping
 [OK] file in ./temp/json structure_block.json
-[OK] copying leather_helmet.json to /temp/temp/
+[WARN] could not find file leather_helmet.json, skipping
+[OK] file in ./temp/json temp
+[WARN] could not find file leather_helmet.json, skipping
 [OK] file in ./temp/json written_book.json
-[OK] copying leather_helmet.json to /temp/temp/
+[WARN] could not find file leather_helmet.json, skipping
 [OK] found dupe file potion.json
 [OK] file in ./temp/json carrot_on_a_stick.json
-[OK] copying potion.json to /temp/temp/
+[WARN] could not find file potion.json, skipping
 [OK] file in ./temp/json item_frame.json
-[OK] copying potion.json to /temp/temp/
+[WARN] could not find file potion.json, skipping
 [OK] file in ./temp/json leather_helmet.json
-[OK] copying potion.json to /temp/temp/
+[WARN] could not find file potion.json, skipping
 [OK] file in ./temp/json potion.json
 [OK] opening potion.json in temp
 [OK] opening potion.json in pack folder
 [OK] appending data...
+[OK] finished writing file potion.json
 [OK] file in ./temp/json structure_block.json
-[OK] copying potion.json to /temp/temp/
+[WARN] could not find file potion.json, skipping
+[OK] file in ./temp/json temp
+[WARN] could not find file potion.json, skipping
 [OK] file in ./temp/json written_book.json
-[OK] copying potion.json to /temp/temp/
+[WARN] could not find file potion.json, skipping
 [OK] found dupe file structure_block.json
 [OK] file in ./temp/json carrot_on_a_stick.json
-[OK] copying structure_block.json to /temp/temp/
+[WARN] could not find file structure_block.json, skipping
 [OK] file in ./temp/json item_frame.json
-[OK] copying structure_block.json to /temp/temp/
+[WARN] could not find file structure_block.json, skipping
 [OK] file in ./temp/json leather_helmet.json
-[OK] copying structure_block.json to /temp/temp/
+[WARN] could not find file structure_block.json, skipping
 [OK] file in ./temp/json potion.json
-[OK] copying structure_block.json to /temp/temp/
+[WARN] could not find file structure_block.json, skipping
 [OK] file in ./temp/json structure_block.json
 [OK] opening structure_block.json in temp
 [OK] opening structure_block.json in pack folder
 [OK] appending data...
+[OK] finished writing file structure_block.json
+[OK] file in ./temp/json temp
+[WARN] could not find file structure_block.json, skipping
 [OK] file in ./temp/json written_book.json
-[OK] copying structure_block.json to /temp/temp/
+[WARN] could not find file structure_block.json, skipping
 [OK] found dupe file written_book.json
 [OK] file in ./temp/json carrot_on_a_stick.json
-[OK] copying written_book.json to /temp/temp/
+[WARN] could not find file written_book.json, skipping
 [OK] file in ./temp/json item_frame.json
-[OK] copying written_book.json to /temp/temp/
+[WARN] could not find file written_book.json, skipping
 [OK] file in ./temp/json leather_helmet.json
-[OK] copying written_book.json to /temp/temp/
+[WARN] could not find file written_book.json, skipping
 [OK] file in ./temp/json potion.json
-[OK] copying written_book.json to /temp/temp/
+[WARN] could not find file written_book.json, skipping
 [OK] file in ./temp/json structure_block.json
-[OK] copying written_book.json to /temp/temp/
+[WARN] could not find file written_book.json, skipping
+[OK] file in ./temp/json temp
+[WARN] could not find file written_book.json, skipping
 [OK] file in ./temp/json written_book.json
 [OK] opening written_book.json in temp
 [OK] opening written_book.json in pack folder
 [OK] appending data...
-[OK] removing "pack.mcmeta" and "pack.png" from test1
-[OK] removing "pack.mcmeta" and "pack.png" from test2
-[OK] created folder /temp/pack/
-[FATAL ERROR] [Errno 2] No such file or directory: './temp/pack/assets/minecraft/models/item/'
+[OK] finished writing file written_book.json
 -----------[End of log]-----------

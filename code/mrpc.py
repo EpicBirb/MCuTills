@@ -98,7 +98,7 @@ try:
   #introduction
   def intro():
     print("==================================================")
-    print("-[MRPC]-")
+    print("-[MRPC v1.0.0]-")
     print("A python program to combine resource packs that")
     print("have conflicts with each other in Minecraft.")
     print("Most commonly, resource packs for data packs.")

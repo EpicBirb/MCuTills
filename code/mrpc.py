@@ -23,7 +23,7 @@ Conditions:
 '''
 
 #import classes
-import os,time,json,shutil,atexit,webbrowser
+import os,time,json,shutil,atexit,webbrowser,sys
 import zipfile as zp
 from collections import Counter
 import pathlib as pl
@@ -38,9 +38,8 @@ try:
 
   #debug checker
   try:
-    debug1 = open("debug.txt")
-    debug = debug1.read() 
-    debug1.close()
+    with open("debug.txt") as debug1:
+      debug = debug1.read() 
     if debug.lower() == "true":
       debugc = 1
       if os.path.exists("log.txt"):
@@ -51,10 +50,12 @@ try:
       else:
         with open("log.txt", "a") as f:
           f.write("-----------[Debug Log]-----------\n \\\\\ What errors can I find today?\n\n")
-    else:
-      pass
   except FileNotFoundError:
     pass
+
+  #print
+  def pt():
+    print()
 
   #function
   def exit_handler():
@@ -86,14 +87,12 @@ try:
 
   #introduction
   def intro():
-    print("==================================================\n-[MRPC v1.0.0]-\nA python program to combine resource packs that\nhave conflicts with each other in Minecraft.\nMost commonly, resource packs for data packs.\n==================================================")
+    print("==================================================\n-[MRPC v1.0.2]-\nA python program to combine resource packs that\nhave conflicts with each other in Minecraft.\nMost commonly, resource packs for data packs.\n==================================================")
 
   #pack.mcmeta writer
   def packmc(ver, pathtowrite):
-    packmcmeta = open(pathtowrite, "w+")
-    jsonwrite = {"pack": {"pack_format": int(ver),"description": "MRPC: github.com/EpicBirb/mrpc"}}
-    packmcmeta.write(json.dumps(jsonwrite, indent=2, sort_keys=True))
-    packmcmeta.close()
+    with open(pathtowrite, "w+") as p:
+      p.write(json.dumps({"pack": {"pack_format": int(ver),"description": "MRPC: github.com/EpicBirb/mrpc"}}, indent=2, sort_keys=True))
 
   def mainask():
     print("Select an option:")
@@ -107,7 +106,7 @@ try:
   while True:
     #intro
     intro()
-    print()
+    pt()
 
     #ask to do
     mainask()
@@ -119,19 +118,21 @@ try:
         webbrowser.open("https://github.com/EpicBirb/mrpc")
         clearconsole()
         intro()
+        mainask()
       elif confirm5 == "3":
         print("Thanks for using this program!")
         time.sleep(2)
         exit(1)
       else:
         clearconsole()
+        intro()
         mainask()
         confirm5 = input("Invalid Option, type it again > ")
 
     #warn
-    print()
+    pt()
     print("Before we begin, you must have the resource packs in the same directory as this program (The resource packs must not be in zip files)")
-    print()
+    pt()
 
     #check for resource packs
     for i in os.listdir("."):
@@ -148,14 +149,18 @@ try:
     if temp_c >= 2:
       print("List of resource packs in current directory:")
       for p in pack:
-        print(f"   {p}")
+        print(f"─┬► {p}")
+        with open(f"./{p}/pack.mcmeta") as data:
+          data2 = json.load(data)
+          data3 = data2["pack"]["description"]
+          print(f" └─[description]► {data3}")
     else:
       print("There is 1 or no resource pack in the current directory. (The program scans for pack.mcmeta in the folders)")
       print("Exiting..")
       debuglog("[ERROR]", "there are 1 or no resource pack in the current folder")
       time.sleep(3)
       exit(1)
-    print()
+    pt()
 
     #asks if these are the packs to be merged
     confirm = input("Are these the resource packs you need to be merged (Yes or No)? ")
@@ -163,12 +168,12 @@ try:
       if confirm.lower() == "yes":
         break
       elif confirm.lower() == "no":
-        print()
+        pt()
         print("Ok, run the program again when you only see the folders you need!")
         time.sleep(5)
         exit(1)
       else:
-        print()
+        pt()
         confirm = input("Yes or No? ")
 
     #list all files in /assets/minecraft/models/item/ cuz it records the json files inside of it
@@ -191,7 +196,7 @@ try:
       exit(1)
 
     #warn
-    print()
+    pt()
     confirm3 = input("Before we continue, the folder you need to be merged with must be edited by the program, if ths pack is new and hasn't been backed up, I advise you to do it. Don't blame me if this happens. DO YOU WISH TO CONTINUE? (Yes or No): ")
 
     #input checker
@@ -211,7 +216,7 @@ try:
           time.sleep(1)
           exit(1)
       else:
-        print()
+        pt()
         confirm3 = input("Yes or No? ")
 
     #make temp strorage
@@ -318,7 +323,7 @@ try:
             shutil.move(os.path.join(subdir, files), "./temp/pack" + subdir.replace(i, ""))
 
     #ask for pack version that user will be using the pack on
-    print()
+    pt()
     print("What version are you planning to use the resource pack on?")
     print("   [1]  1.6.1 - 1.8.9")
     print("   [2]  1.9 - 1.10.2")
@@ -355,9 +360,9 @@ try:
       debuglog("[WARN]", "could not remove pack folder, skipping")
 
     #done
-    print()
+    pt()
     print("Merge Complete")
-    print()
+    pt()
 
     #ask to go back to main screen
     print("Want to go back to main screen (yes or no?)? ")
@@ -367,13 +372,15 @@ try:
         clearconsole()
         break
       elif confirm7.lower() == "no":
-        print()
+        pt()
         exitp()
       else:
-        print()
+        pt()
         confirm7 = input("Yes or No? ")
 
 #logs error and kills the program
 except Exception as error:
-    debuglog("[FATAL ERROR]", error)
+    et1, w, et = sys.exc_info()
+    ln = et.tb_lineno
+    debuglog("[FATAL ERROR]", f"Type: {et1} at Line: {ln}. ‼ {error} ‼")
     exit(1)
